@@ -1,0 +1,22 @@
+# LibreLane run outputs and saved views (huge; must NOT be copied into the nix
+# store by `nix develop`, or every invocation copies gigabytes and hangs).
+**/runs/
+build/
+
+# Hardened binary streams are regenerable via `make harden`; keep them out of
+# git until you deliberately commit a shuttle deliverable.
+*.gds
+*.gds.gz
+*.spef
+*.sdf
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Nix
+result
+result-*

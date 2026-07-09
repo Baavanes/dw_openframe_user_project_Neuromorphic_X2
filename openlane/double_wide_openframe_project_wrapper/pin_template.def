@@ -1,0 +1,2015 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN double_wide_openframe_project_wrapper ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 6754630 4766630 ) ;
+PINS 1003 ;
+- gpio_in[0] + NET gpio_in[0] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 705095 ) ( 1000 705495 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[0] + NET gpio_slow_sel[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 709095 ) ( 1000 709495 ) + PLACED ( 0 0 ) N ;
+- analog_io[0] + NET analog_io[0] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 713095 ) ( 1000 713495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[0] + NET gpio_dm1[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 717095 ) ( 1000 717495 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[0] + NET analog_noesd_io[0] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 721095 ) ( 1000 721495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[0] + NET gpio_analog_en[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 725095 ) ( 1000 725495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[0] + NET gpio_dm0[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 729095 ) ( 1000 729495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[0] + NET gpio_analog_pol[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 733095 ) ( 1000 733495 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[0] + NET gpio_inp_dis[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 737095 ) ( 1000 737495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[0] + NET gpio_analog_sel[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 741095 ) ( 1000 741495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[0] + NET gpio_dm2[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 745095 ) ( 1000 745495 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[0] + NET gpio_holdover[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 749095 ) ( 1000 749495 ) + PLACED ( 0 0 ) N ;
+- gpio_out[0] + NET gpio_out[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 753095 ) ( 1000 753495 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[0] + NET gpio_vtrip_sel[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 757095 ) ( 1000 757495 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[0] + NET gpio_ib_mode_sel[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 761095 ) ( 1000 761495 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[0] + NET gpio_oeb[0] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 765095 ) ( 1000 765495 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[0] + NET gpio_in_h[0] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 769095 ) ( 1000 769495 ) + PLACED ( 0 0 ) N ;
+- gpio_in[1] + NET gpio_in[1] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 921095 ) ( 1000 921495 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[1] + NET gpio_slow_sel[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 925095 ) ( 1000 925495 ) + PLACED ( 0 0 ) N ;
+- analog_io[1] + NET analog_io[1] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 929095 ) ( 1000 929495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[1] + NET gpio_dm1[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 933095 ) ( 1000 933495 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[1] + NET analog_noesd_io[1] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 937095 ) ( 1000 937495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[1] + NET gpio_analog_en[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 941095 ) ( 1000 941495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[1] + NET gpio_dm0[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 945095 ) ( 1000 945495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[1] + NET gpio_analog_pol[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 949095 ) ( 1000 949495 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[1] + NET gpio_inp_dis[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 953095 ) ( 1000 953495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[1] + NET gpio_analog_sel[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 957095 ) ( 1000 957495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[1] + NET gpio_dm2[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 961095 ) ( 1000 961495 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[1] + NET gpio_holdover[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 965095 ) ( 1000 965495 ) + PLACED ( 0 0 ) N ;
+- gpio_out[1] + NET gpio_out[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 969095 ) ( 1000 969495 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[1] + NET gpio_vtrip_sel[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 973095 ) ( 1000 973495 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[1] + NET gpio_ib_mode_sel[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 977095 ) ( 1000 977495 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[1] + NET gpio_oeb[1] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 981095 ) ( 1000 981495 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[1] + NET gpio_in_h[1] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 985095 ) ( 1000 985495 ) + PLACED ( 0 0 ) N ;
+- gpio_in[2] + NET gpio_in[2] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 1137095 ) ( 1000 1137495 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[2] + NET gpio_slow_sel[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1141095 ) ( 1000 1141495 ) + PLACED ( 0 0 ) N ;
+- analog_io[2] + NET analog_io[2] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 1145095 ) ( 1000 1145495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[2] + NET gpio_dm1[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1149095 ) ( 1000 1149495 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[2] + NET analog_noesd_io[2] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 1153095 ) ( 1000 1153495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[2] + NET gpio_analog_en[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1157095 ) ( 1000 1157495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[2] + NET gpio_dm0[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1161095 ) ( 1000 1161495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[2] + NET gpio_analog_pol[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1165095 ) ( 1000 1165495 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[2] + NET gpio_inp_dis[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1169095 ) ( 1000 1169495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[2] + NET gpio_analog_sel[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1173095 ) ( 1000 1173495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[2] + NET gpio_dm2[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1177095 ) ( 1000 1177495 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[2] + NET gpio_holdover[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1181095 ) ( 1000 1181495 ) + PLACED ( 0 0 ) N ;
+- gpio_out[2] + NET gpio_out[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1185095 ) ( 1000 1185495 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[2] + NET gpio_vtrip_sel[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1189095 ) ( 1000 1189495 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[2] + NET gpio_ib_mode_sel[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1193095 ) ( 1000 1193495 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[2] + NET gpio_oeb[2] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1197095 ) ( 1000 1197495 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[2] + NET gpio_in_h[2] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 1201095 ) ( 1000 1201495 ) + PLACED ( 0 0 ) N ;
+- gpio_in[3] + NET gpio_in[3] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 1353095 ) ( 1000 1353495 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[3] + NET gpio_slow_sel[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1357095 ) ( 1000 1357495 ) + PLACED ( 0 0 ) N ;
+- analog_io[3] + NET analog_io[3] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 1361095 ) ( 1000 1361495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[3] + NET gpio_dm1[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1365095 ) ( 1000 1365495 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[3] + NET analog_noesd_io[3] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 1369095 ) ( 1000 1369495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[3] + NET gpio_analog_en[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1373095 ) ( 1000 1373495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[3] + NET gpio_dm0[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1377095 ) ( 1000 1377495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[3] + NET gpio_analog_pol[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1381095 ) ( 1000 1381495 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[3] + NET gpio_inp_dis[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1385095 ) ( 1000 1385495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[3] + NET gpio_analog_sel[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1389095 ) ( 1000 1389495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[3] + NET gpio_dm2[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1393095 ) ( 1000 1393495 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[3] + NET gpio_holdover[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1397095 ) ( 1000 1397495 ) + PLACED ( 0 0 ) N ;
+- gpio_out[3] + NET gpio_out[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1401095 ) ( 1000 1401495 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[3] + NET gpio_vtrip_sel[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1405095 ) ( 1000 1405495 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[3] + NET gpio_ib_mode_sel[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1409095 ) ( 1000 1409495 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[3] + NET gpio_oeb[3] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1413095 ) ( 1000 1413495 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[3] + NET gpio_in_h[3] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 1417095 ) ( 1000 1417495 ) + PLACED ( 0 0 ) N ;
+- gpio_in[4] + NET gpio_in[4] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 1569095 ) ( 1000 1569495 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[4] + NET gpio_slow_sel[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1573095 ) ( 1000 1573495 ) + PLACED ( 0 0 ) N ;
+- analog_io[4] + NET analog_io[4] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 1577095 ) ( 1000 1577495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[4] + NET gpio_dm1[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1581095 ) ( 1000 1581495 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[4] + NET analog_noesd_io[4] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 1585095 ) ( 1000 1585495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[4] + NET gpio_analog_en[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1589095 ) ( 1000 1589495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[4] + NET gpio_dm0[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1593095 ) ( 1000 1593495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[4] + NET gpio_analog_pol[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1597095 ) ( 1000 1597495 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[4] + NET gpio_inp_dis[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1601095 ) ( 1000 1601495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[4] + NET gpio_analog_sel[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1605095 ) ( 1000 1605495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[4] + NET gpio_dm2[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1609095 ) ( 1000 1609495 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[4] + NET gpio_holdover[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1613095 ) ( 1000 1613495 ) + PLACED ( 0 0 ) N ;
+- gpio_out[4] + NET gpio_out[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1617095 ) ( 1000 1617495 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[4] + NET gpio_vtrip_sel[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1621095 ) ( 1000 1621495 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[4] + NET gpio_ib_mode_sel[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1625095 ) ( 1000 1625495 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[4] + NET gpio_oeb[4] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1629095 ) ( 1000 1629495 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[4] + NET gpio_in_h[4] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 1633095 ) ( 1000 1633495 ) + PLACED ( 0 0 ) N ;
+- gpio_in[5] + NET gpio_in[5] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 1785095 ) ( 1000 1785495 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[5] + NET gpio_slow_sel[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1789095 ) ( 1000 1789495 ) + PLACED ( 0 0 ) N ;
+- analog_io[5] + NET analog_io[5] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 1793095 ) ( 1000 1793495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[5] + NET gpio_dm1[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1797095 ) ( 1000 1797495 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[5] + NET analog_noesd_io[5] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 1801095 ) ( 1000 1801495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[5] + NET gpio_analog_en[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1805095 ) ( 1000 1805495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[5] + NET gpio_dm0[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1809095 ) ( 1000 1809495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[5] + NET gpio_analog_pol[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1813095 ) ( 1000 1813495 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[5] + NET gpio_inp_dis[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1817095 ) ( 1000 1817495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[5] + NET gpio_analog_sel[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1821095 ) ( 1000 1821495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[5] + NET gpio_dm2[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1825095 ) ( 1000 1825495 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[5] + NET gpio_holdover[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1829095 ) ( 1000 1829495 ) + PLACED ( 0 0 ) N ;
+- gpio_out[5] + NET gpio_out[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1833095 ) ( 1000 1833495 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[5] + NET gpio_vtrip_sel[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1837095 ) ( 1000 1837495 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[5] + NET gpio_ib_mode_sel[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1841095 ) ( 1000 1841495 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[5] + NET gpio_oeb[5] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 1845095 ) ( 1000 1845495 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[5] + NET gpio_in_h[5] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 1849095 ) ( 1000 1849495 ) + PLACED ( 0 0 ) N ;
+- gpio_in[6] + NET gpio_in[6] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 2423095 ) ( 1000 2423495 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[6] + NET gpio_slow_sel[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2427095 ) ( 1000 2427495 ) + PLACED ( 0 0 ) N ;
+- analog_io[6] + NET analog_io[6] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 2431095 ) ( 1000 2431495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[6] + NET gpio_dm1[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2435095 ) ( 1000 2435495 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[6] + NET analog_noesd_io[6] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 2439095 ) ( 1000 2439495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[6] + NET gpio_analog_en[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2443095 ) ( 1000 2443495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[6] + NET gpio_dm0[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2447095 ) ( 1000 2447495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[6] + NET gpio_analog_pol[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2451095 ) ( 1000 2451495 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[6] + NET gpio_inp_dis[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2455095 ) ( 1000 2455495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[6] + NET gpio_analog_sel[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2459095 ) ( 1000 2459495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[6] + NET gpio_dm2[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2463095 ) ( 1000 2463495 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[6] + NET gpio_holdover[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2467095 ) ( 1000 2467495 ) + PLACED ( 0 0 ) N ;
+- gpio_out[6] + NET gpio_out[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2471095 ) ( 1000 2471495 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[6] + NET gpio_vtrip_sel[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2475095 ) ( 1000 2475495 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[6] + NET gpio_ib_mode_sel[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2479095 ) ( 1000 2479495 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[6] + NET gpio_oeb[6] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2483095 ) ( 1000 2483495 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[6] + NET gpio_in_h[6] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 2487095 ) ( 1000 2487495 ) + PLACED ( 0 0 ) N ;
+- gpio_in[7] + NET gpio_in[7] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 2639095 ) ( 1000 2639495 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[7] + NET gpio_slow_sel[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2643095 ) ( 1000 2643495 ) + PLACED ( 0 0 ) N ;
+- analog_io[7] + NET analog_io[7] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 2647095 ) ( 1000 2647495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[7] + NET gpio_dm1[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2651095 ) ( 1000 2651495 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[7] + NET analog_noesd_io[7] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 2655095 ) ( 1000 2655495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[7] + NET gpio_analog_en[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2659095 ) ( 1000 2659495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[7] + NET gpio_dm0[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2663095 ) ( 1000 2663495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[7] + NET gpio_analog_pol[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2667095 ) ( 1000 2667495 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[7] + NET gpio_inp_dis[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2671095 ) ( 1000 2671495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[7] + NET gpio_analog_sel[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2675095 ) ( 1000 2675495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[7] + NET gpio_dm2[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2679095 ) ( 1000 2679495 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[7] + NET gpio_holdover[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2683095 ) ( 1000 2683495 ) + PLACED ( 0 0 ) N ;
+- gpio_out[7] + NET gpio_out[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2687095 ) ( 1000 2687495 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[7] + NET gpio_vtrip_sel[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2691095 ) ( 1000 2691495 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[7] + NET gpio_ib_mode_sel[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2695095 ) ( 1000 2695495 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[7] + NET gpio_oeb[7] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2699095 ) ( 1000 2699495 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[7] + NET gpio_in_h[7] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 2703095 ) ( 1000 2703495 ) + PLACED ( 0 0 ) N ;
+- gpio_in[8] + NET gpio_in[8] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 2855095 ) ( 1000 2855495 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[8] + NET gpio_slow_sel[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2859095 ) ( 1000 2859495 ) + PLACED ( 0 0 ) N ;
+- analog_io[8] + NET analog_io[8] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 2863095 ) ( 1000 2863495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[8] + NET gpio_dm1[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2867095 ) ( 1000 2867495 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[8] + NET analog_noesd_io[8] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 2871095 ) ( 1000 2871495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[8] + NET gpio_analog_en[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2875095 ) ( 1000 2875495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[8] + NET gpio_dm0[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2879095 ) ( 1000 2879495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[8] + NET gpio_analog_pol[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2883095 ) ( 1000 2883495 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[8] + NET gpio_inp_dis[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2887095 ) ( 1000 2887495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[8] + NET gpio_analog_sel[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2891095 ) ( 1000 2891495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[8] + NET gpio_dm2[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2895095 ) ( 1000 2895495 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[8] + NET gpio_holdover[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2899095 ) ( 1000 2899495 ) + PLACED ( 0 0 ) N ;
+- gpio_out[8] + NET gpio_out[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2903095 ) ( 1000 2903495 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[8] + NET gpio_vtrip_sel[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2907095 ) ( 1000 2907495 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[8] + NET gpio_ib_mode_sel[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2911095 ) ( 1000 2911495 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[8] + NET gpio_oeb[8] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 2915095 ) ( 1000 2915495 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[8] + NET gpio_in_h[8] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 2919095 ) ( 1000 2919495 ) + PLACED ( 0 0 ) N ;
+- gpio_in[9] + NET gpio_in[9] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 3071095 ) ( 1000 3071495 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[9] + NET gpio_slow_sel[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3075095 ) ( 1000 3075495 ) + PLACED ( 0 0 ) N ;
+- analog_io[9] + NET analog_io[9] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 3079095 ) ( 1000 3079495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[9] + NET gpio_dm1[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3083095 ) ( 1000 3083495 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[9] + NET analog_noesd_io[9] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 3087095 ) ( 1000 3087495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[9] + NET gpio_analog_en[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3091095 ) ( 1000 3091495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[9] + NET gpio_dm0[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3095095 ) ( 1000 3095495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[9] + NET gpio_analog_pol[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3099095 ) ( 1000 3099495 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[9] + NET gpio_inp_dis[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3103095 ) ( 1000 3103495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[9] + NET gpio_analog_sel[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3107095 ) ( 1000 3107495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[9] + NET gpio_dm2[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3111095 ) ( 1000 3111495 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[9] + NET gpio_holdover[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3115095 ) ( 1000 3115495 ) + PLACED ( 0 0 ) N ;
+- gpio_out[9] + NET gpio_out[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3119095 ) ( 1000 3119495 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[9] + NET gpio_vtrip_sel[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3123095 ) ( 1000 3123495 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[9] + NET gpio_ib_mode_sel[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3127095 ) ( 1000 3127495 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[9] + NET gpio_oeb[9] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3131095 ) ( 1000 3131495 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[9] + NET gpio_in_h[9] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 3135095 ) ( 1000 3135495 ) + PLACED ( 0 0 ) N ;
+- gpio_in[10] + NET gpio_in[10] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 3287095 ) ( 1000 3287495 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[10] + NET gpio_slow_sel[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3291095 ) ( 1000 3291495 ) + PLACED ( 0 0 ) N ;
+- analog_io[10] + NET analog_io[10] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 3295095 ) ( 1000 3295495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[10] + NET gpio_dm1[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3299095 ) ( 1000 3299495 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[10] + NET analog_noesd_io[10] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 3303095 ) ( 1000 3303495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[10] + NET gpio_analog_en[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3307095 ) ( 1000 3307495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[10] + NET gpio_dm0[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3311095 ) ( 1000 3311495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[10] + NET gpio_analog_pol[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3315095 ) ( 1000 3315495 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[10] + NET gpio_inp_dis[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3319095 ) ( 1000 3319495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[10] + NET gpio_analog_sel[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3323095 ) ( 1000 3323495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[10] + NET gpio_dm2[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3327095 ) ( 1000 3327495 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[10] + NET gpio_holdover[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3331095 ) ( 1000 3331495 ) + PLACED ( 0 0 ) N ;
+- gpio_out[10] + NET gpio_out[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3335095 ) ( 1000 3335495 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[10] + NET gpio_vtrip_sel[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3339095 ) ( 1000 3339495 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[10] + NET gpio_ib_mode_sel[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3343095 ) ( 1000 3343495 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[10] + NET gpio_oeb[10] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3347095 ) ( 1000 3347495 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[10] + NET gpio_in_h[10] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 3351095 ) ( 1000 3351495 ) + PLACED ( 0 0 ) N ;
+- gpio_in[11] + NET gpio_in[11] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 3503095 ) ( 1000 3503495 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[11] + NET gpio_slow_sel[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3507095 ) ( 1000 3507495 ) + PLACED ( 0 0 ) N ;
+- analog_io[11] + NET analog_io[11] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 3511095 ) ( 1000 3511495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[11] + NET gpio_dm1[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3515095 ) ( 1000 3515495 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[11] + NET analog_noesd_io[11] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 3519095 ) ( 1000 3519495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[11] + NET gpio_analog_en[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3523095 ) ( 1000 3523495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[11] + NET gpio_dm0[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3527095 ) ( 1000 3527495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[11] + NET gpio_analog_pol[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3531095 ) ( 1000 3531495 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[11] + NET gpio_inp_dis[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3535095 ) ( 1000 3535495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[11] + NET gpio_analog_sel[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3539095 ) ( 1000 3539495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[11] + NET gpio_dm2[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3543095 ) ( 1000 3543495 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[11] + NET gpio_holdover[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3547095 ) ( 1000 3547495 ) + PLACED ( 0 0 ) N ;
+- gpio_out[11] + NET gpio_out[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3551095 ) ( 1000 3551495 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[11] + NET gpio_vtrip_sel[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3555095 ) ( 1000 3555495 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[11] + NET gpio_ib_mode_sel[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3559095 ) ( 1000 3559495 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[11] + NET gpio_oeb[11] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3563095 ) ( 1000 3563495 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[11] + NET gpio_in_h[11] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 3567095 ) ( 1000 3567495 ) + PLACED ( 0 0 ) N ;
+- gpio_in[12] + NET gpio_in[12] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 3719095 ) ( 1000 3719495 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[12] + NET gpio_slow_sel[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3723095 ) ( 1000 3723495 ) + PLACED ( 0 0 ) N ;
+- analog_io[12] + NET analog_io[12] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 3727095 ) ( 1000 3727495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[12] + NET gpio_dm1[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3731095 ) ( 1000 3731495 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[12] + NET analog_noesd_io[12] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 3735095 ) ( 1000 3735495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[12] + NET gpio_analog_en[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3739095 ) ( 1000 3739495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[12] + NET gpio_dm0[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3743095 ) ( 1000 3743495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[12] + NET gpio_analog_pol[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3747095 ) ( 1000 3747495 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[12] + NET gpio_inp_dis[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3751095 ) ( 1000 3751495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[12] + NET gpio_analog_sel[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3755095 ) ( 1000 3755495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[12] + NET gpio_dm2[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3759095 ) ( 1000 3759495 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[12] + NET gpio_holdover[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3763095 ) ( 1000 3763495 ) + PLACED ( 0 0 ) N ;
+- gpio_out[12] + NET gpio_out[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3767095 ) ( 1000 3767495 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[12] + NET gpio_vtrip_sel[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3771095 ) ( 1000 3771495 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[12] + NET gpio_ib_mode_sel[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3775095 ) ( 1000 3775495 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[12] + NET gpio_oeb[12] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 3779095 ) ( 1000 3779495 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[12] + NET gpio_in_h[12] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 3783095 ) ( 1000 3783495 ) + PLACED ( 0 0 ) N ;
+- gpio_in[13] + NET gpio_in[13] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 4568095 ) ( 1000 4568495 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[13] + NET gpio_slow_sel[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 4572095 ) ( 1000 4572495 ) + PLACED ( 0 0 ) N ;
+- analog_io[13] + NET analog_io[13] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 4576095 ) ( 1000 4576495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[13] + NET gpio_dm1[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 4580095 ) ( 1000 4580495 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[13] + NET analog_noesd_io[13] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 0 4584095 ) ( 1000 4584495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[13] + NET gpio_analog_en[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 4588095 ) ( 1000 4588495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[13] + NET gpio_dm0[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 4592095 ) ( 1000 4592495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[13] + NET gpio_analog_pol[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 4596095 ) ( 1000 4596495 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[13] + NET gpio_inp_dis[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 4600095 ) ( 1000 4600495 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[13] + NET gpio_analog_sel[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 4604095 ) ( 1000 4604495 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[13] + NET gpio_dm2[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 4608095 ) ( 1000 4608495 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[13] + NET gpio_holdover[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 4612095 ) ( 1000 4612495 ) + PLACED ( 0 0 ) N ;
+- gpio_out[13] + NET gpio_out[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 4616095 ) ( 1000 4616495 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[13] + NET gpio_vtrip_sel[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 4620095 ) ( 1000 4620495 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[13] + NET gpio_ib_mode_sel[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 4624095 ) ( 1000 4624495 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[13] + NET gpio_oeb[13] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 0 4628095 ) ( 1000 4628495 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[13] + NET gpio_in_h[13] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 0 4632095 ) ( 1000 4632495 ) + PLACED ( 0 0 ) N ;
+- gpio_in[14] + NET gpio_in[14] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 297135 ) ( 6754630 297535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[14] + NET gpio_slow_sel[14] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 301135 ) ( 6754630 301535 ) + PLACED ( 0 0 ) N ;
+- analog_io[14] + NET analog_io[14] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 305135 ) ( 6754630 305535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[14] + NET gpio_dm1[14] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 309135 ) ( 6754630 309535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[14] + NET analog_noesd_io[14] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 313135 ) ( 6754630 313535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[14] + NET gpio_analog_en[14] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 317135 ) ( 6754630 317535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[14] + NET gpio_dm0[14] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 321135 ) ( 6754630 321535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[14] + NET gpio_analog_pol[14] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 325135 ) ( 6754630 325535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[14] + NET gpio_inp_dis[14] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 329135 ) ( 6754630 329535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[14] + NET gpio_analog_sel[14] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 333135 ) ( 6754630 333535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[14] + NET gpio_dm2[14] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 337135 ) ( 6754630 337535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[14] + NET gpio_holdover[14] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 341135 ) ( 6754630 341535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[14] + NET gpio_out[14] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 345135 ) ( 6754630 345535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[14] + NET gpio_vtrip_sel[14] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 349135 ) ( 6754630 349535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[14] + NET gpio_ib_mode_sel[14] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 353135 ) ( 6754630 353535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[14] + NET gpio_oeb[14] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 357135 ) ( 6754630 357535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[14] + NET gpio_in_h[14] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 361135 ) ( 6754630 361535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[15] + NET gpio_in[15] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 523135 ) ( 6754630 523535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[15] + NET gpio_slow_sel[15] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 527135 ) ( 6754630 527535 ) + PLACED ( 0 0 ) N ;
+- analog_io[15] + NET analog_io[15] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 531135 ) ( 6754630 531535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[15] + NET gpio_dm1[15] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 535135 ) ( 6754630 535535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[15] + NET analog_noesd_io[15] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 539135 ) ( 6754630 539535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[15] + NET gpio_analog_en[15] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 543135 ) ( 6754630 543535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[15] + NET gpio_dm0[15] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 547135 ) ( 6754630 547535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[15] + NET gpio_analog_pol[15] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 551135 ) ( 6754630 551535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[15] + NET gpio_inp_dis[15] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 555135 ) ( 6754630 555535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[15] + NET gpio_analog_sel[15] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 559135 ) ( 6754630 559535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[15] + NET gpio_dm2[15] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 563135 ) ( 6754630 563535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[15] + NET gpio_holdover[15] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 567135 ) ( 6754630 567535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[15] + NET gpio_out[15] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 571135 ) ( 6754630 571535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[15] + NET gpio_vtrip_sel[15] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 575135 ) ( 6754630 575535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[15] + NET gpio_ib_mode_sel[15] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 579135 ) ( 6754630 579535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[15] + NET gpio_oeb[15] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 583135 ) ( 6754630 583535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[15] + NET gpio_in_h[15] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 587135 ) ( 6754630 587535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[16] + NET gpio_in[16] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 748135 ) ( 6754630 748535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[16] + NET gpio_slow_sel[16] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 752135 ) ( 6754630 752535 ) + PLACED ( 0 0 ) N ;
+- analog_io[16] + NET analog_io[16] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 756135 ) ( 6754630 756535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[16] + NET gpio_dm1[16] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 760135 ) ( 6754630 760535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[16] + NET analog_noesd_io[16] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 764135 ) ( 6754630 764535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[16] + NET gpio_analog_en[16] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 768135 ) ( 6754630 768535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[16] + NET gpio_dm0[16] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 772135 ) ( 6754630 772535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[16] + NET gpio_analog_pol[16] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 776135 ) ( 6754630 776535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[16] + NET gpio_inp_dis[16] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 780135 ) ( 6754630 780535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[16] + NET gpio_analog_sel[16] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 784135 ) ( 6754630 784535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[16] + NET gpio_dm2[16] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 788135 ) ( 6754630 788535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[16] + NET gpio_holdover[16] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 792135 ) ( 6754630 792535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[16] + NET gpio_out[16] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 796135 ) ( 6754630 796535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[16] + NET gpio_vtrip_sel[16] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 800135 ) ( 6754630 800535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[16] + NET gpio_ib_mode_sel[16] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 804135 ) ( 6754630 804535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[16] + NET gpio_oeb[16] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 808135 ) ( 6754630 808535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[16] + NET gpio_in_h[16] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 812135 ) ( 6754630 812535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[17] + NET gpio_in[17] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 974135 ) ( 6754630 974535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[17] + NET gpio_slow_sel[17] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 978135 ) ( 6754630 978535 ) + PLACED ( 0 0 ) N ;
+- analog_io[17] + NET analog_io[17] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 982135 ) ( 6754630 982535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[17] + NET gpio_dm1[17] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 986135 ) ( 6754630 986535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[17] + NET analog_noesd_io[17] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 990135 ) ( 6754630 990535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[17] + NET gpio_analog_en[17] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 994135 ) ( 6754630 994535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[17] + NET gpio_dm0[17] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 998135 ) ( 6754630 998535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[17] + NET gpio_analog_pol[17] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1002135 ) ( 6754630 1002535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[17] + NET gpio_inp_dis[17] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1006135 ) ( 6754630 1006535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[17] + NET gpio_analog_sel[17] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1010135 ) ( 6754630 1010535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[17] + NET gpio_dm2[17] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1014135 ) ( 6754630 1014535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[17] + NET gpio_holdover[17] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1018135 ) ( 6754630 1018535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[17] + NET gpio_out[17] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1022135 ) ( 6754630 1022535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[17] + NET gpio_vtrip_sel[17] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1026135 ) ( 6754630 1026535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[17] + NET gpio_ib_mode_sel[17] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1030135 ) ( 6754630 1030535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[17] + NET gpio_oeb[17] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1034135 ) ( 6754630 1034535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[17] + NET gpio_in_h[17] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1038135 ) ( 6754630 1038535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[18] + NET gpio_in[18] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1199135 ) ( 6754630 1199535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[18] + NET gpio_slow_sel[18] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1203135 ) ( 6754630 1203535 ) + PLACED ( 0 0 ) N ;
+- analog_io[18] + NET analog_io[18] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1207135 ) ( 6754630 1207535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[18] + NET gpio_dm1[18] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1211135 ) ( 6754630 1211535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[18] + NET analog_noesd_io[18] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1215135 ) ( 6754630 1215535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[18] + NET gpio_analog_en[18] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1219135 ) ( 6754630 1219535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[18] + NET gpio_dm0[18] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1223135 ) ( 6754630 1223535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[18] + NET gpio_analog_pol[18] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1227135 ) ( 6754630 1227535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[18] + NET gpio_inp_dis[18] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1231135 ) ( 6754630 1231535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[18] + NET gpio_analog_sel[18] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1235135 ) ( 6754630 1235535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[18] + NET gpio_dm2[18] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1239135 ) ( 6754630 1239535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[18] + NET gpio_holdover[18] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1243135 ) ( 6754630 1243535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[18] + NET gpio_out[18] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1247135 ) ( 6754630 1247535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[18] + NET gpio_vtrip_sel[18] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1251135 ) ( 6754630 1251535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[18] + NET gpio_ib_mode_sel[18] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1255135 ) ( 6754630 1255535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[18] + NET gpio_oeb[18] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1259135 ) ( 6754630 1259535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[18] + NET gpio_in_h[18] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1263135 ) ( 6754630 1263535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[19] + NET gpio_in[19] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1424135 ) ( 6754630 1424535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[19] + NET gpio_slow_sel[19] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1428135 ) ( 6754630 1428535 ) + PLACED ( 0 0 ) N ;
+- analog_io[19] + NET analog_io[19] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1432135 ) ( 6754630 1432535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[19] + NET gpio_dm1[19] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1436135 ) ( 6754630 1436535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[19] + NET analog_noesd_io[19] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1440135 ) ( 6754630 1440535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[19] + NET gpio_analog_en[19] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1444135 ) ( 6754630 1444535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[19] + NET gpio_dm0[19] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1448135 ) ( 6754630 1448535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[19] + NET gpio_analog_pol[19] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1452135 ) ( 6754630 1452535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[19] + NET gpio_inp_dis[19] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1456135 ) ( 6754630 1456535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[19] + NET gpio_analog_sel[19] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1460135 ) ( 6754630 1460535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[19] + NET gpio_dm2[19] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1464135 ) ( 6754630 1464535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[19] + NET gpio_holdover[19] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1468135 ) ( 6754630 1468535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[19] + NET gpio_out[19] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1472135 ) ( 6754630 1472535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[19] + NET gpio_vtrip_sel[19] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1476135 ) ( 6754630 1476535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[19] + NET gpio_ib_mode_sel[19] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1480135 ) ( 6754630 1480535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[19] + NET gpio_oeb[19] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1484135 ) ( 6754630 1484535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[19] + NET gpio_in_h[19] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1488135 ) ( 6754630 1488535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[20] + NET gpio_in[20] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1650135 ) ( 6754630 1650535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[20] + NET gpio_slow_sel[20] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1654135 ) ( 6754630 1654535 ) + PLACED ( 0 0 ) N ;
+- analog_io[20] + NET analog_io[20] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1658135 ) ( 6754630 1658535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[20] + NET gpio_dm1[20] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1662135 ) ( 6754630 1662535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[20] + NET analog_noesd_io[20] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1666135 ) ( 6754630 1666535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[20] + NET gpio_analog_en[20] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1670135 ) ( 6754630 1670535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[20] + NET gpio_dm0[20] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1674135 ) ( 6754630 1674535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[20] + NET gpio_analog_pol[20] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1678135 ) ( 6754630 1678535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[20] + NET gpio_inp_dis[20] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1682135 ) ( 6754630 1682535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[20] + NET gpio_analog_sel[20] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1686135 ) ( 6754630 1686535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[20] + NET gpio_dm2[20] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1690135 ) ( 6754630 1690535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[20] + NET gpio_holdover[20] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1694135 ) ( 6754630 1694535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[20] + NET gpio_out[20] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1698135 ) ( 6754630 1698535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[20] + NET gpio_vtrip_sel[20] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1702135 ) ( 6754630 1702535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[20] + NET gpio_ib_mode_sel[20] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1706135 ) ( 6754630 1706535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[20] + NET gpio_oeb[20] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1710135 ) ( 6754630 1710535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[20] + NET gpio_in_h[20] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 1714135 ) ( 6754630 1714535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[21] + NET gpio_in[21] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2536135 ) ( 6754630 2536535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[21] + NET gpio_slow_sel[21] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2540135 ) ( 6754630 2540535 ) + PLACED ( 0 0 ) N ;
+- analog_io[21] + NET analog_io[21] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2544135 ) ( 6754630 2544535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[21] + NET gpio_dm1[21] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2548135 ) ( 6754630 2548535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[21] + NET analog_noesd_io[21] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2552135 ) ( 6754630 2552535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[21] + NET gpio_analog_en[21] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2556135 ) ( 6754630 2556535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[21] + NET gpio_dm0[21] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2560135 ) ( 6754630 2560535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[21] + NET gpio_analog_pol[21] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2564135 ) ( 6754630 2564535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[21] + NET gpio_inp_dis[21] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2568135 ) ( 6754630 2568535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[21] + NET gpio_analog_sel[21] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2572135 ) ( 6754630 2572535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[21] + NET gpio_dm2[21] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2576135 ) ( 6754630 2576535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[21] + NET gpio_holdover[21] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2580135 ) ( 6754630 2580535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[21] + NET gpio_out[21] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2584135 ) ( 6754630 2584535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[21] + NET gpio_vtrip_sel[21] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2588135 ) ( 6754630 2588535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[21] + NET gpio_ib_mode_sel[21] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2592135 ) ( 6754630 2592535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[21] + NET gpio_oeb[21] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2596135 ) ( 6754630 2596535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[21] + NET gpio_in_h[21] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2600135 ) ( 6754630 2600535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[22] + NET gpio_in[22] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2762135 ) ( 6754630 2762535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[22] + NET gpio_slow_sel[22] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2766135 ) ( 6754630 2766535 ) + PLACED ( 0 0 ) N ;
+- analog_io[22] + NET analog_io[22] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2770135 ) ( 6754630 2770535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[22] + NET gpio_dm1[22] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2774135 ) ( 6754630 2774535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[22] + NET analog_noesd_io[22] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2778135 ) ( 6754630 2778535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[22] + NET gpio_analog_en[22] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2782135 ) ( 6754630 2782535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[22] + NET gpio_dm0[22] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2786135 ) ( 6754630 2786535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[22] + NET gpio_analog_pol[22] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2790135 ) ( 6754630 2790535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[22] + NET gpio_inp_dis[22] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2794135 ) ( 6754630 2794535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[22] + NET gpio_analog_sel[22] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2798135 ) ( 6754630 2798535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[22] + NET gpio_dm2[22] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2802135 ) ( 6754630 2802535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[22] + NET gpio_holdover[22] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2806135 ) ( 6754630 2806535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[22] + NET gpio_out[22] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2810135 ) ( 6754630 2810535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[22] + NET gpio_vtrip_sel[22] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2814135 ) ( 6754630 2814535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[22] + NET gpio_ib_mode_sel[22] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2818135 ) ( 6754630 2818535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[22] + NET gpio_oeb[22] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2822135 ) ( 6754630 2822535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[22] + NET gpio_in_h[22] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2826135 ) ( 6754630 2826535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[23] + NET gpio_in[23] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2987135 ) ( 6754630 2987535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[23] + NET gpio_slow_sel[23] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2991135 ) ( 6754630 2991535 ) + PLACED ( 0 0 ) N ;
+- analog_io[23] + NET analog_io[23] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2995135 ) ( 6754630 2995535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[23] + NET gpio_dm1[23] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 2999135 ) ( 6754630 2999535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[23] + NET analog_noesd_io[23] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3003135 ) ( 6754630 3003535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[23] + NET gpio_analog_en[23] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3007135 ) ( 6754630 3007535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[23] + NET gpio_dm0[23] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3011135 ) ( 6754630 3011535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[23] + NET gpio_analog_pol[23] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3015135 ) ( 6754630 3015535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[23] + NET gpio_inp_dis[23] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3019135 ) ( 6754630 3019535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[23] + NET gpio_analog_sel[23] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3023135 ) ( 6754630 3023535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[23] + NET gpio_dm2[23] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3027135 ) ( 6754630 3027535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[23] + NET gpio_holdover[23] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3031135 ) ( 6754630 3031535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[23] + NET gpio_out[23] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3035135 ) ( 6754630 3035535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[23] + NET gpio_vtrip_sel[23] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3039135 ) ( 6754630 3039535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[23] + NET gpio_ib_mode_sel[23] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3043135 ) ( 6754630 3043535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[23] + NET gpio_oeb[23] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3047135 ) ( 6754630 3047535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[23] + NET gpio_in_h[23] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3051135 ) ( 6754630 3051535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[24] + NET gpio_in[24] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3213135 ) ( 6754630 3213535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[24] + NET gpio_slow_sel[24] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3217135 ) ( 6754630 3217535 ) + PLACED ( 0 0 ) N ;
+- analog_io[24] + NET analog_io[24] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3221135 ) ( 6754630 3221535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[24] + NET gpio_dm1[24] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3225135 ) ( 6754630 3225535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[24] + NET analog_noesd_io[24] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3229135 ) ( 6754630 3229535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[24] + NET gpio_analog_en[24] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3233135 ) ( 6754630 3233535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[24] + NET gpio_dm0[24] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3237135 ) ( 6754630 3237535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[24] + NET gpio_analog_pol[24] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3241135 ) ( 6754630 3241535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[24] + NET gpio_inp_dis[24] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3245135 ) ( 6754630 3245535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[24] + NET gpio_analog_sel[24] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3249135 ) ( 6754630 3249535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[24] + NET gpio_dm2[24] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3253135 ) ( 6754630 3253535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[24] + NET gpio_holdover[24] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3257135 ) ( 6754630 3257535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[24] + NET gpio_out[24] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3261135 ) ( 6754630 3261535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[24] + NET gpio_vtrip_sel[24] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3265135 ) ( 6754630 3265535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[24] + NET gpio_ib_mode_sel[24] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3269135 ) ( 6754630 3269535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[24] + NET gpio_oeb[24] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3273135 ) ( 6754630 3273535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[24] + NET gpio_in_h[24] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3277135 ) ( 6754630 3277535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[25] + NET gpio_in[25] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3438135 ) ( 6754630 3438535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[25] + NET gpio_slow_sel[25] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3442135 ) ( 6754630 3442535 ) + PLACED ( 0 0 ) N ;
+- analog_io[25] + NET analog_io[25] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3446135 ) ( 6754630 3446535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[25] + NET gpio_dm1[25] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3450135 ) ( 6754630 3450535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[25] + NET analog_noesd_io[25] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3454135 ) ( 6754630 3454535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[25] + NET gpio_analog_en[25] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3458135 ) ( 6754630 3458535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[25] + NET gpio_dm0[25] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3462135 ) ( 6754630 3462535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[25] + NET gpio_analog_pol[25] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3466135 ) ( 6754630 3466535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[25] + NET gpio_inp_dis[25] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3470135 ) ( 6754630 3470535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[25] + NET gpio_analog_sel[25] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3474135 ) ( 6754630 3474535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[25] + NET gpio_dm2[25] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3478135 ) ( 6754630 3478535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[25] + NET gpio_holdover[25] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3482135 ) ( 6754630 3482535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[25] + NET gpio_out[25] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3486135 ) ( 6754630 3486535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[25] + NET gpio_vtrip_sel[25] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3490135 ) ( 6754630 3490535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[25] + NET gpio_ib_mode_sel[25] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3494135 ) ( 6754630 3494535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[25] + NET gpio_oeb[25] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3498135 ) ( 6754630 3498535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[25] + NET gpio_in_h[25] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3502135 ) ( 6754630 3502535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[26] + NET gpio_in[26] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3663135 ) ( 6754630 3663535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[26] + NET gpio_slow_sel[26] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3667135 ) ( 6754630 3667535 ) + PLACED ( 0 0 ) N ;
+- analog_io[26] + NET analog_io[26] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3671135 ) ( 6754630 3671535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[26] + NET gpio_dm1[26] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3675135 ) ( 6754630 3675535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[26] + NET analog_noesd_io[26] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3679135 ) ( 6754630 3679535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[26] + NET gpio_analog_en[26] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3683135 ) ( 6754630 3683535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[26] + NET gpio_dm0[26] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3687135 ) ( 6754630 3687535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[26] + NET gpio_analog_pol[26] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3691135 ) ( 6754630 3691535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[26] + NET gpio_inp_dis[26] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3695135 ) ( 6754630 3695535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[26] + NET gpio_analog_sel[26] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3699135 ) ( 6754630 3699535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[26] + NET gpio_dm2[26] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3703135 ) ( 6754630 3703535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[26] + NET gpio_holdover[26] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3707135 ) ( 6754630 3707535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[26] + NET gpio_out[26] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3711135 ) ( 6754630 3711535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[26] + NET gpio_vtrip_sel[26] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3715135 ) ( 6754630 3715535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[26] + NET gpio_ib_mode_sel[26] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3719135 ) ( 6754630 3719535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[26] + NET gpio_oeb[26] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3723135 ) ( 6754630 3723535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[26] + NET gpio_in_h[26] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 3727135 ) ( 6754630 3727535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[27] + NET gpio_in[27] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4109135 ) ( 6754630 4109535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[27] + NET gpio_slow_sel[27] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4113135 ) ( 6754630 4113535 ) + PLACED ( 0 0 ) N ;
+- analog_io[27] + NET analog_io[27] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4117135 ) ( 6754630 4117535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[27] + NET gpio_dm1[27] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4121135 ) ( 6754630 4121535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[27] + NET analog_noesd_io[27] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4125135 ) ( 6754630 4125535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[27] + NET gpio_analog_en[27] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4129135 ) ( 6754630 4129535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[27] + NET gpio_dm0[27] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4133135 ) ( 6754630 4133535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[27] + NET gpio_analog_pol[27] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4137135 ) ( 6754630 4137535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[27] + NET gpio_inp_dis[27] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4141135 ) ( 6754630 4141535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[27] + NET gpio_analog_sel[27] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4145135 ) ( 6754630 4145535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[27] + NET gpio_dm2[27] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4149135 ) ( 6754630 4149535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[27] + NET gpio_holdover[27] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4153135 ) ( 6754630 4153535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[27] + NET gpio_out[27] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4157135 ) ( 6754630 4157535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[27] + NET gpio_vtrip_sel[27] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4161135 ) ( 6754630 4161535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[27] + NET gpio_ib_mode_sel[27] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4165135 ) ( 6754630 4165535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[27] + NET gpio_oeb[27] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4169135 ) ( 6754630 4169535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[27] + NET gpio_in_h[27] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4173135 ) ( 6754630 4173535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[28] + NET gpio_in[28] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4555135 ) ( 6754630 4555535 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[28] + NET gpio_slow_sel[28] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4559135 ) ( 6754630 4559535 ) + PLACED ( 0 0 ) N ;
+- analog_io[28] + NET analog_io[28] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4563135 ) ( 6754630 4563535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[28] + NET gpio_dm1[28] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4567135 ) ( 6754630 4567535 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[28] + NET analog_noesd_io[28] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4571135 ) ( 6754630 4571535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[28] + NET gpio_analog_en[28] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4575135 ) ( 6754630 4575535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[28] + NET gpio_dm0[28] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4579135 ) ( 6754630 4579535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[28] + NET gpio_analog_pol[28] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4583135 ) ( 6754630 4583535 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[28] + NET gpio_inp_dis[28] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4587135 ) ( 6754630 4587535 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[28] + NET gpio_analog_sel[28] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4591135 ) ( 6754630 4591535 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[28] + NET gpio_dm2[28] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4595135 ) ( 6754630 4595535 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[28] + NET gpio_holdover[28] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4599135 ) ( 6754630 4599535 ) + PLACED ( 0 0 ) N ;
+- gpio_out[28] + NET gpio_out[28] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4603135 ) ( 6754630 4603535 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[28] + NET gpio_vtrip_sel[28] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4607135 ) ( 6754630 4607535 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[28] + NET gpio_ib_mode_sel[28] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4611135 ) ( 6754630 4611535 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[28] + NET gpio_oeb[28] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4615135 ) ( 6754630 4615535 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[28] + NET gpio_in_h[28] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met3 ( 6753630 4619135 ) ( 6754630 4619535 ) + PLACED ( 0 0 ) N ;
+- gpio_in[29] + NET gpio_in[29] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 178095 4765630 ) ( 178495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[29] + NET gpio_slow_sel[29] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 182095 4765630 ) ( 182495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[29] + NET analog_io[29] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 186095 4765630 ) ( 186495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[29] + NET gpio_dm1[29] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 190095 4765630 ) ( 190495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[29] + NET analog_noesd_io[29] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 194095 4765630 ) ( 194495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[29] + NET gpio_analog_en[29] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 198095 4765630 ) ( 198495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[29] + NET gpio_dm0[29] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 202095 4765630 ) ( 202495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[29] + NET gpio_analog_pol[29] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 206095 4765630 ) ( 206495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[29] + NET gpio_inp_dis[29] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 210095 4765630 ) ( 210495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[29] + NET gpio_analog_sel[29] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 214095 4765630 ) ( 214495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[29] + NET gpio_dm2[29] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 218095 4765630 ) ( 218495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[29] + NET gpio_holdover[29] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 222095 4765630 ) ( 222495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[29] + NET gpio_out[29] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 226095 4765630 ) ( 226495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[29] + NET gpio_vtrip_sel[29] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 230095 4765630 ) ( 230495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[29] + NET gpio_ib_mode_sel[29] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 234095 4765630 ) ( 234495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[29] + NET gpio_oeb[29] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 238095 4765630 ) ( 238495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[29] + NET gpio_in_h[29] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 242095 4765630 ) ( 242495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[30] + NET gpio_in[30] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 435095 4765630 ) ( 435495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[30] + NET gpio_slow_sel[30] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 439095 4765630 ) ( 439495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[30] + NET analog_io[30] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 443095 4765630 ) ( 443495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[30] + NET gpio_dm1[30] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 447095 4765630 ) ( 447495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[30] + NET analog_noesd_io[30] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 451095 4765630 ) ( 451495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[30] + NET gpio_analog_en[30] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 455095 4765630 ) ( 455495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[30] + NET gpio_dm0[30] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 459095 4765630 ) ( 459495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[30] + NET gpio_analog_pol[30] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 463095 4765630 ) ( 463495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[30] + NET gpio_inp_dis[30] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 467095 4765630 ) ( 467495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[30] + NET gpio_analog_sel[30] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 471095 4765630 ) ( 471495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[30] + NET gpio_dm2[30] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 475095 4765630 ) ( 475495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[30] + NET gpio_holdover[30] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 479095 4765630 ) ( 479495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[30] + NET gpio_out[30] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 483095 4765630 ) ( 483495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[30] + NET gpio_vtrip_sel[30] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 487095 4765630 ) ( 487495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[30] + NET gpio_ib_mode_sel[30] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 491095 4765630 ) ( 491495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[30] + NET gpio_oeb[30] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 495095 4765630 ) ( 495495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[30] + NET gpio_in_h[30] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 499095 4765630 ) ( 499495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[31] + NET gpio_in[31] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 692095 4765630 ) ( 692495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[31] + NET gpio_slow_sel[31] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 696095 4765630 ) ( 696495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[31] + NET analog_io[31] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 700095 4765630 ) ( 700495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[31] + NET gpio_dm1[31] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 704095 4765630 ) ( 704495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[31] + NET analog_noesd_io[31] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 708095 4765630 ) ( 708495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[31] + NET gpio_analog_en[31] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 712095 4765630 ) ( 712495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[31] + NET gpio_dm0[31] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 716095 4765630 ) ( 716495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[31] + NET gpio_analog_pol[31] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 720095 4765630 ) ( 720495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[31] + NET gpio_inp_dis[31] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 724095 4765630 ) ( 724495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[31] + NET gpio_analog_sel[31] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 728095 4765630 ) ( 728495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[31] + NET gpio_dm2[31] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 732095 4765630 ) ( 732495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[31] + NET gpio_holdover[31] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 736095 4765630 ) ( 736495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[31] + NET gpio_out[31] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 740095 4765630 ) ( 740495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[31] + NET gpio_vtrip_sel[31] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 744095 4765630 ) ( 744495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[31] + NET gpio_ib_mode_sel[31] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 748095 4765630 ) ( 748495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[31] + NET gpio_oeb[31] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 752095 4765630 ) ( 752495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[31] + NET gpio_in_h[31] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 756095 4765630 ) ( 756495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[32] + NET gpio_in[32] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 949095 4765630 ) ( 949495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[32] + NET gpio_slow_sel[32] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 953095 4765630 ) ( 953495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[32] + NET analog_io[32] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 957095 4765630 ) ( 957495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[32] + NET gpio_dm1[32] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 961095 4765630 ) ( 961495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[32] + NET analog_noesd_io[32] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 965095 4765630 ) ( 965495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[32] + NET gpio_analog_en[32] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 969095 4765630 ) ( 969495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[32] + NET gpio_dm0[32] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 973095 4765630 ) ( 973495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[32] + NET gpio_analog_pol[32] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 977095 4765630 ) ( 977495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[32] + NET gpio_inp_dis[32] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 981095 4765630 ) ( 981495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[32] + NET gpio_analog_sel[32] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 985095 4765630 ) ( 985495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[32] + NET gpio_dm2[32] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 989095 4765630 ) ( 989495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[32] + NET gpio_holdover[32] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 993095 4765630 ) ( 993495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[32] + NET gpio_out[32] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 997095 4765630 ) ( 997495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[32] + NET gpio_vtrip_sel[32] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1001095 4765630 ) ( 1001495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[32] + NET gpio_ib_mode_sel[32] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1005095 4765630 ) ( 1005495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[32] + NET gpio_oeb[32] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1009095 4765630 ) ( 1009495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[32] + NET gpio_in_h[32] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 1013095 4765630 ) ( 1013495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[33] + NET gpio_in[33] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 1207095 4765630 ) ( 1207495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[33] + NET gpio_slow_sel[33] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1211095 4765630 ) ( 1211495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[33] + NET analog_io[33] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 1215095 4765630 ) ( 1215495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[33] + NET gpio_dm1[33] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1219095 4765630 ) ( 1219495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[33] + NET analog_noesd_io[33] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 1223095 4765630 ) ( 1223495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[33] + NET gpio_analog_en[33] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1227095 4765630 ) ( 1227495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[33] + NET gpio_dm0[33] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1231095 4765630 ) ( 1231495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[33] + NET gpio_analog_pol[33] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1235095 4765630 ) ( 1235495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[33] + NET gpio_inp_dis[33] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1239095 4765630 ) ( 1239495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[33] + NET gpio_analog_sel[33] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1243095 4765630 ) ( 1243495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[33] + NET gpio_dm2[33] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1247095 4765630 ) ( 1247495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[33] + NET gpio_holdover[33] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1251095 4765630 ) ( 1251495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[33] + NET gpio_out[33] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1255095 4765630 ) ( 1255495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[33] + NET gpio_vtrip_sel[33] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1259095 4765630 ) ( 1259495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[33] + NET gpio_ib_mode_sel[33] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1263095 4765630 ) ( 1263495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[33] + NET gpio_oeb[33] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1267095 4765630 ) ( 1267495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[33] + NET gpio_in_h[33] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 1271095 4765630 ) ( 1271495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[34] + NET gpio_in[34] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 1716095 4765630 ) ( 1716495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[34] + NET gpio_slow_sel[34] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1720095 4765630 ) ( 1720495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[34] + NET analog_io[34] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 1724095 4765630 ) ( 1724495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[34] + NET gpio_dm1[34] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1728095 4765630 ) ( 1728495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[34] + NET analog_noesd_io[34] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 1732095 4765630 ) ( 1732495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[34] + NET gpio_analog_en[34] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1736095 4765630 ) ( 1736495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[34] + NET gpio_dm0[34] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1740095 4765630 ) ( 1740495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[34] + NET gpio_analog_pol[34] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1744095 4765630 ) ( 1744495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[34] + NET gpio_inp_dis[34] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1748095 4765630 ) ( 1748495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[34] + NET gpio_analog_sel[34] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1752095 4765630 ) ( 1752495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[34] + NET gpio_dm2[34] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1756095 4765630 ) ( 1756495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[34] + NET gpio_holdover[34] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1760095 4765630 ) ( 1760495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[34] + NET gpio_out[34] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1764095 4765630 ) ( 1764495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[34] + NET gpio_vtrip_sel[34] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1768095 4765630 ) ( 1768495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[34] + NET gpio_ib_mode_sel[34] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1772095 4765630 ) ( 1772495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[34] + NET gpio_oeb[34] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1776095 4765630 ) ( 1776495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[34] + NET gpio_in_h[34] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 1780095 4765630 ) ( 1780495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[35] + NET gpio_in[35] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 2161095 4765630 ) ( 2161495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[35] + NET gpio_slow_sel[35] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2165095 4765630 ) ( 2165495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[35] + NET analog_io[35] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 2169095 4765630 ) ( 2169495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[35] + NET gpio_dm1[35] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2173095 4765630 ) ( 2173495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[35] + NET analog_noesd_io[35] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 2177095 4765630 ) ( 2177495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[35] + NET gpio_analog_en[35] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2181095 4765630 ) ( 2181495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[35] + NET gpio_dm0[35] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2185095 4765630 ) ( 2185495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[35] + NET gpio_analog_pol[35] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2189095 4765630 ) ( 2189495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[35] + NET gpio_inp_dis[35] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2193095 4765630 ) ( 2193495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[35] + NET gpio_analog_sel[35] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2197095 4765630 ) ( 2197495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[35] + NET gpio_dm2[35] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2201095 4765630 ) ( 2201495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[35] + NET gpio_holdover[35] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2205095 4765630 ) ( 2205495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[35] + NET gpio_out[35] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2209095 4765630 ) ( 2209495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[35] + NET gpio_vtrip_sel[35] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2213095 4765630 ) ( 2213495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[35] + NET gpio_ib_mode_sel[35] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2217095 4765630 ) ( 2217495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[35] + NET gpio_oeb[35] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2221095 4765630 ) ( 2221495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[35] + NET gpio_in_h[35] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 2225095 4765630 ) ( 2225495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[36] + NET gpio_in[36] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 2418095 4765630 ) ( 2418495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[36] + NET gpio_slow_sel[36] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2422095 4765630 ) ( 2422495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[36] + NET analog_io[36] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 2426095 4765630 ) ( 2426495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[36] + NET gpio_dm1[36] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2430095 4765630 ) ( 2430495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[36] + NET analog_noesd_io[36] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 2434095 4765630 ) ( 2434495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[36] + NET gpio_analog_en[36] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2438095 4765630 ) ( 2438495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[36] + NET gpio_dm0[36] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2442095 4765630 ) ( 2442495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[36] + NET gpio_analog_pol[36] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2446095 4765630 ) ( 2446495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[36] + NET gpio_inp_dis[36] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2450095 4765630 ) ( 2450495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[36] + NET gpio_analog_sel[36] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2454095 4765630 ) ( 2454495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[36] + NET gpio_dm2[36] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2458095 4765630 ) ( 2458495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[36] + NET gpio_holdover[36] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2462095 4765630 ) ( 2462495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[36] + NET gpio_out[36] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2466095 4765630 ) ( 2466495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[36] + NET gpio_vtrip_sel[36] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2470095 4765630 ) ( 2470495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[36] + NET gpio_ib_mode_sel[36] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2474095 4765630 ) ( 2474495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[36] + NET gpio_oeb[36] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2478095 4765630 ) ( 2478495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[36] + NET gpio_in_h[36] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 2482095 4765630 ) ( 2482495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[37] + NET gpio_in[37] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 2927095 4765630 ) ( 2927495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[37] + NET gpio_slow_sel[37] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2931095 4765630 ) ( 2931495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[37] + NET analog_io[37] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 2935095 4765630 ) ( 2935495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[37] + NET gpio_dm1[37] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2939095 4765630 ) ( 2939495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[37] + NET analog_noesd_io[37] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 2943095 4765630 ) ( 2943495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[37] + NET gpio_analog_en[37] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2947095 4765630 ) ( 2947495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[37] + NET gpio_dm0[37] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2951095 4765630 ) ( 2951495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[37] + NET gpio_analog_pol[37] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2955095 4765630 ) ( 2955495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[37] + NET gpio_inp_dis[37] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2959095 4765630 ) ( 2959495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[37] + NET gpio_analog_sel[37] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2963095 4765630 ) ( 2963495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[37] + NET gpio_dm2[37] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2967095 4765630 ) ( 2967495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[37] + NET gpio_holdover[37] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2971095 4765630 ) ( 2971495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[37] + NET gpio_out[37] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2975095 4765630 ) ( 2975495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[37] + NET gpio_vtrip_sel[37] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2979095 4765630 ) ( 2979495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[37] + NET gpio_ib_mode_sel[37] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2983095 4765630 ) ( 2983495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[37] + NET gpio_oeb[37] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2987095 4765630 ) ( 2987495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[37] + NET gpio_in_h[37] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 2991095 4765630 ) ( 2991495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[38] + NET gpio_in[38] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 3766095 4765630 ) ( 3766495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[38] + NET gpio_slow_sel[38] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 3770095 4765630 ) ( 3770495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[38] + NET analog_io[38] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 3774095 4765630 ) ( 3774495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[38] + NET gpio_dm1[38] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 3778095 4765630 ) ( 3778495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[38] + NET analog_noesd_io[38] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 3782095 4765630 ) ( 3782495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[38] + NET gpio_analog_en[38] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 3786095 4765630 ) ( 3786495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[38] + NET gpio_dm0[38] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 3790095 4765630 ) ( 3790495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[38] + NET gpio_analog_pol[38] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 3794095 4765630 ) ( 3794495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[38] + NET gpio_inp_dis[38] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 3798095 4765630 ) ( 3798495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[38] + NET gpio_analog_sel[38] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 3802095 4765630 ) ( 3802495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[38] + NET gpio_dm2[38] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 3806095 4765630 ) ( 3806495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[38] + NET gpio_holdover[38] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 3810095 4765630 ) ( 3810495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[38] + NET gpio_out[38] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 3814095 4765630 ) ( 3814495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[38] + NET gpio_vtrip_sel[38] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 3818095 4765630 ) ( 3818495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[38] + NET gpio_ib_mode_sel[38] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 3822095 4765630 ) ( 3822495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[38] + NET gpio_oeb[38] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 3826095 4765630 ) ( 3826495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[38] + NET gpio_in_h[38] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 3830095 4765630 ) ( 3830495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[39] + NET gpio_in[39] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 4023095 4765630 ) ( 4023495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[39] + NET gpio_slow_sel[39] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4027095 4765630 ) ( 4027495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[39] + NET analog_io[39] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 4031095 4765630 ) ( 4031495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[39] + NET gpio_dm1[39] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4035095 4765630 ) ( 4035495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[39] + NET analog_noesd_io[39] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 4039095 4765630 ) ( 4039495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[39] + NET gpio_analog_en[39] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4043095 4765630 ) ( 4043495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[39] + NET gpio_dm0[39] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4047095 4765630 ) ( 4047495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[39] + NET gpio_analog_pol[39] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4051095 4765630 ) ( 4051495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[39] + NET gpio_inp_dis[39] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4055095 4765630 ) ( 4055495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[39] + NET gpio_analog_sel[39] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4059095 4765630 ) ( 4059495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[39] + NET gpio_dm2[39] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4063095 4765630 ) ( 4063495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[39] + NET gpio_holdover[39] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4067095 4765630 ) ( 4067495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[39] + NET gpio_out[39] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4071095 4765630 ) ( 4071495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[39] + NET gpio_vtrip_sel[39] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4075095 4765630 ) ( 4075495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[39] + NET gpio_ib_mode_sel[39] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4079095 4765630 ) ( 4079495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[39] + NET gpio_oeb[39] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4083095 4765630 ) ( 4083495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[39] + NET gpio_in_h[39] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 4087095 4765630 ) ( 4087495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[40] + NET gpio_in[40] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 4280095 4765630 ) ( 4280495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[40] + NET gpio_slow_sel[40] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4284095 4765630 ) ( 4284495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[40] + NET analog_io[40] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 4288095 4765630 ) ( 4288495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[40] + NET gpio_dm1[40] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4292095 4765630 ) ( 4292495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[40] + NET analog_noesd_io[40] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 4296095 4765630 ) ( 4296495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[40] + NET gpio_analog_en[40] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4300095 4765630 ) ( 4300495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[40] + NET gpio_dm0[40] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4304095 4765630 ) ( 4304495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[40] + NET gpio_analog_pol[40] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4308095 4765630 ) ( 4308495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[40] + NET gpio_inp_dis[40] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4312095 4765630 ) ( 4312495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[40] + NET gpio_analog_sel[40] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4316095 4765630 ) ( 4316495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[40] + NET gpio_dm2[40] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4320095 4765630 ) ( 4320495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[40] + NET gpio_holdover[40] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4324095 4765630 ) ( 4324495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[40] + NET gpio_out[40] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4328095 4765630 ) ( 4328495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[40] + NET gpio_vtrip_sel[40] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4332095 4765630 ) ( 4332495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[40] + NET gpio_ib_mode_sel[40] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4336095 4765630 ) ( 4336495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[40] + NET gpio_oeb[40] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4340095 4765630 ) ( 4340495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[40] + NET gpio_in_h[40] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 4344095 4765630 ) ( 4344495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[41] + NET gpio_in[41] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 4537095 4765630 ) ( 4537495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[41] + NET gpio_slow_sel[41] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4541095 4765630 ) ( 4541495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[41] + NET analog_io[41] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 4545095 4765630 ) ( 4545495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[41] + NET gpio_dm1[41] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4549095 4765630 ) ( 4549495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[41] + NET analog_noesd_io[41] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 4553095 4765630 ) ( 4553495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[41] + NET gpio_analog_en[41] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4557095 4765630 ) ( 4557495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[41] + NET gpio_dm0[41] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4561095 4765630 ) ( 4561495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[41] + NET gpio_analog_pol[41] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4565095 4765630 ) ( 4565495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[41] + NET gpio_inp_dis[41] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4569095 4765630 ) ( 4569495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[41] + NET gpio_analog_sel[41] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4573095 4765630 ) ( 4573495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[41] + NET gpio_dm2[41] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4577095 4765630 ) ( 4577495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[41] + NET gpio_holdover[41] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4581095 4765630 ) ( 4581495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[41] + NET gpio_out[41] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4585095 4765630 ) ( 4585495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[41] + NET gpio_vtrip_sel[41] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4589095 4765630 ) ( 4589495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[41] + NET gpio_ib_mode_sel[41] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4593095 4765630 ) ( 4593495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[41] + NET gpio_oeb[41] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4597095 4765630 ) ( 4597495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[41] + NET gpio_in_h[41] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 4601095 4765630 ) ( 4601495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[42] + NET gpio_in[42] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 4795095 4765630 ) ( 4795495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[42] + NET gpio_slow_sel[42] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4799095 4765630 ) ( 4799495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[42] + NET analog_io[42] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 4803095 4765630 ) ( 4803495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[42] + NET gpio_dm1[42] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4807095 4765630 ) ( 4807495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[42] + NET analog_noesd_io[42] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 4811095 4765630 ) ( 4811495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[42] + NET gpio_analog_en[42] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4815095 4765630 ) ( 4815495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[42] + NET gpio_dm0[42] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4819095 4765630 ) ( 4819495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[42] + NET gpio_analog_pol[42] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4823095 4765630 ) ( 4823495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[42] + NET gpio_inp_dis[42] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4827095 4765630 ) ( 4827495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[42] + NET gpio_analog_sel[42] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4831095 4765630 ) ( 4831495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[42] + NET gpio_dm2[42] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4835095 4765630 ) ( 4835495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[42] + NET gpio_holdover[42] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4839095 4765630 ) ( 4839495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[42] + NET gpio_out[42] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4843095 4765630 ) ( 4843495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[42] + NET gpio_vtrip_sel[42] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4847095 4765630 ) ( 4847495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[42] + NET gpio_ib_mode_sel[42] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4851095 4765630 ) ( 4851495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[42] + NET gpio_oeb[42] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4855095 4765630 ) ( 4855495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[42] + NET gpio_in_h[42] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 4859095 4765630 ) ( 4859495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[43] + NET gpio_in[43] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 5304095 4765630 ) ( 5304495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[43] + NET gpio_slow_sel[43] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5308095 4765630 ) ( 5308495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[43] + NET analog_io[43] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 5312095 4765630 ) ( 5312495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[43] + NET gpio_dm1[43] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5316095 4765630 ) ( 5316495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[43] + NET analog_noesd_io[43] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 5320095 4765630 ) ( 5320495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[43] + NET gpio_analog_en[43] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5324095 4765630 ) ( 5324495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[43] + NET gpio_dm0[43] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5328095 4765630 ) ( 5328495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[43] + NET gpio_analog_pol[43] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5332095 4765630 ) ( 5332495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[43] + NET gpio_inp_dis[43] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5336095 4765630 ) ( 5336495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[43] + NET gpio_analog_sel[43] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5340095 4765630 ) ( 5340495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[43] + NET gpio_dm2[43] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5344095 4765630 ) ( 5344495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[43] + NET gpio_holdover[43] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5348095 4765630 ) ( 5348495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[43] + NET gpio_out[43] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5352095 4765630 ) ( 5352495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[43] + NET gpio_vtrip_sel[43] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5356095 4765630 ) ( 5356495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[43] + NET gpio_ib_mode_sel[43] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5360095 4765630 ) ( 5360495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[43] + NET gpio_oeb[43] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5364095 4765630 ) ( 5364495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[43] + NET gpio_in_h[43] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 5368095 4765630 ) ( 5368495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[44] + NET gpio_in[44] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 5749095 4765630 ) ( 5749495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[44] + NET gpio_slow_sel[44] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5753095 4765630 ) ( 5753495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[44] + NET analog_io[44] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 5757095 4765630 ) ( 5757495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[44] + NET gpio_dm1[44] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5761095 4765630 ) ( 5761495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[44] + NET analog_noesd_io[44] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 5765095 4765630 ) ( 5765495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[44] + NET gpio_analog_en[44] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5769095 4765630 ) ( 5769495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[44] + NET gpio_dm0[44] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5773095 4765630 ) ( 5773495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[44] + NET gpio_analog_pol[44] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5777095 4765630 ) ( 5777495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[44] + NET gpio_inp_dis[44] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5781095 4765630 ) ( 5781495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[44] + NET gpio_analog_sel[44] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5785095 4765630 ) ( 5785495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[44] + NET gpio_dm2[44] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5789095 4765630 ) ( 5789495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[44] + NET gpio_holdover[44] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5793095 4765630 ) ( 5793495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[44] + NET gpio_out[44] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5797095 4765630 ) ( 5797495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[44] + NET gpio_vtrip_sel[44] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5801095 4765630 ) ( 5801495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[44] + NET gpio_ib_mode_sel[44] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5805095 4765630 ) ( 5805495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[44] + NET gpio_oeb[44] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5809095 4765630 ) ( 5809495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[44] + NET gpio_in_h[44] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 5813095 4765630 ) ( 5813495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[45] + NET gpio_in[45] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 6006095 4765630 ) ( 6006495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[45] + NET gpio_slow_sel[45] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6010095 4765630 ) ( 6010495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[45] + NET analog_io[45] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 6014095 4765630 ) ( 6014495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[45] + NET gpio_dm1[45] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6018095 4765630 ) ( 6018495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[45] + NET analog_noesd_io[45] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 6022095 4765630 ) ( 6022495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[45] + NET gpio_analog_en[45] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6026095 4765630 ) ( 6026495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[45] + NET gpio_dm0[45] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6030095 4765630 ) ( 6030495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[45] + NET gpio_analog_pol[45] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6034095 4765630 ) ( 6034495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[45] + NET gpio_inp_dis[45] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6038095 4765630 ) ( 6038495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[45] + NET gpio_analog_sel[45] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6042095 4765630 ) ( 6042495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[45] + NET gpio_dm2[45] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6046095 4765630 ) ( 6046495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[45] + NET gpio_holdover[45] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6050095 4765630 ) ( 6050495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[45] + NET gpio_out[45] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6054095 4765630 ) ( 6054495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[45] + NET gpio_vtrip_sel[45] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6058095 4765630 ) ( 6058495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[45] + NET gpio_ib_mode_sel[45] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6062095 4765630 ) ( 6062495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[45] + NET gpio_oeb[45] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6066095 4765630 ) ( 6066495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[45] + NET gpio_in_h[45] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 6070095 4765630 ) ( 6070495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[46] + NET gpio_in[46] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 6515095 4765630 ) ( 6515495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[46] + NET gpio_slow_sel[46] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6519095 4765630 ) ( 6519495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_io[46] + NET analog_io[46] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 6523095 4765630 ) ( 6523495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[46] + NET gpio_dm1[46] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6527095 4765630 ) ( 6527495 4766630 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[46] + NET analog_noesd_io[46] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 6531095 4765630 ) ( 6531495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[46] + NET gpio_analog_en[46] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6535095 4765630 ) ( 6535495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[46] + NET gpio_dm0[46] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6539095 4765630 ) ( 6539495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[46] + NET gpio_analog_pol[46] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6543095 4765630 ) ( 6543495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[46] + NET gpio_inp_dis[46] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6547095 4765630 ) ( 6547495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[46] + NET gpio_analog_sel[46] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6551095 4765630 ) ( 6551495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[46] + NET gpio_dm2[46] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6555095 4765630 ) ( 6555495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[46] + NET gpio_holdover[46] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6559095 4765630 ) ( 6559495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_out[46] + NET gpio_out[46] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6563095 4765630 ) ( 6563495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[46] + NET gpio_vtrip_sel[46] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6567095 4765630 ) ( 6567495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[46] + NET gpio_ib_mode_sel[46] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6571095 4765630 ) ( 6571495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[46] + NET gpio_oeb[46] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6575095 4765630 ) ( 6575495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[46] + NET gpio_in_h[46] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 6579095 4765630 ) ( 6579495 4766630 ) + PLACED ( 0 0 ) N ;
+- gpio_in[47] + NET gpio_in[47] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 729135 0 ) ( 729535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[47] + NET gpio_slow_sel[47] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 733135 0 ) ( 733535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_io[47] + NET analog_io[47] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 737135 0 ) ( 737535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[47] + NET gpio_dm1[47] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 741135 0 ) ( 741535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[47] + NET analog_noesd_io[47] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 745135 0 ) ( 745535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[47] + NET gpio_analog_en[47] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 749135 0 ) ( 749535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[47] + NET gpio_dm0[47] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 753135 0 ) ( 753535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[47] + NET gpio_analog_pol[47] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 757135 0 ) ( 757535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[47] + NET gpio_inp_dis[47] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 761135 0 ) ( 761535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[47] + NET gpio_analog_sel[47] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 765135 0 ) ( 765535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[47] + NET gpio_dm2[47] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 769135 0 ) ( 769535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[47] + NET gpio_holdover[47] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 773135 0 ) ( 773535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_out[47] + NET gpio_out[47] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 777135 0 ) ( 777535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[47] + NET gpio_vtrip_sel[47] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 781135 0 ) ( 781535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[47] + NET gpio_ib_mode_sel[47] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 785135 0 ) ( 785535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[47] + NET gpio_oeb[47] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 789135 0 ) ( 789535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[47] + NET gpio_in_h[47] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 793135 0 ) ( 793535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in[48] + NET gpio_in[48] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 1272135 0 ) ( 1272535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[48] + NET gpio_slow_sel[48] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1276135 0 ) ( 1276535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_io[48] + NET analog_io[48] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 1280135 0 ) ( 1280535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[48] + NET gpio_dm1[48] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1284135 0 ) ( 1284535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[48] + NET analog_noesd_io[48] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 1288135 0 ) ( 1288535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[48] + NET gpio_analog_en[48] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1292135 0 ) ( 1292535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[48] + NET gpio_dm0[48] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1296135 0 ) ( 1296535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[48] + NET gpio_analog_pol[48] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1300135 0 ) ( 1300535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[48] + NET gpio_inp_dis[48] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1304135 0 ) ( 1304535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[48] + NET gpio_analog_sel[48] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1308135 0 ) ( 1308535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[48] + NET gpio_dm2[48] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1312135 0 ) ( 1312535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[48] + NET gpio_holdover[48] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1316135 0 ) ( 1316535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_out[48] + NET gpio_out[48] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1320135 0 ) ( 1320535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[48] + NET gpio_vtrip_sel[48] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1324135 0 ) ( 1324535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[48] + NET gpio_ib_mode_sel[48] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1328135 0 ) ( 1328535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[48] + NET gpio_oeb[48] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1332135 0 ) ( 1332535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[48] + NET gpio_in_h[48] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 1336135 0 ) ( 1336535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in[49] + NET gpio_in[49] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 1546135 0 ) ( 1546535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[49] + NET gpio_slow_sel[49] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1550135 0 ) ( 1550535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_io[49] + NET analog_io[49] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 1554135 0 ) ( 1554535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[49] + NET gpio_dm1[49] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1558135 0 ) ( 1558535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[49] + NET analog_noesd_io[49] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 1562135 0 ) ( 1562535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[49] + NET gpio_analog_en[49] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1566135 0 ) ( 1566535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[49] + NET gpio_dm0[49] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1570135 0 ) ( 1570535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[49] + NET gpio_analog_pol[49] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1574135 0 ) ( 1574535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[49] + NET gpio_inp_dis[49] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1578135 0 ) ( 1578535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[49] + NET gpio_analog_sel[49] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1582135 0 ) ( 1582535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[49] + NET gpio_dm2[49] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1586135 0 ) ( 1586535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[49] + NET gpio_holdover[49] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1590135 0 ) ( 1590535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_out[49] + NET gpio_out[49] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1594135 0 ) ( 1594535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[49] + NET gpio_vtrip_sel[49] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1598135 0 ) ( 1598535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[49] + NET gpio_ib_mode_sel[49] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1602135 0 ) ( 1602535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[49] + NET gpio_oeb[49] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1606135 0 ) ( 1606535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[49] + NET gpio_in_h[49] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 1610135 0 ) ( 1610535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in[50] + NET gpio_in[50] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 1820135 0 ) ( 1820535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[50] + NET gpio_slow_sel[50] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1824135 0 ) ( 1824535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_io[50] + NET analog_io[50] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 1828135 0 ) ( 1828535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[50] + NET gpio_dm1[50] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1832135 0 ) ( 1832535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[50] + NET analog_noesd_io[50] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 1836135 0 ) ( 1836535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[50] + NET gpio_analog_en[50] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1840135 0 ) ( 1840535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[50] + NET gpio_dm0[50] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1844135 0 ) ( 1844535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[50] + NET gpio_analog_pol[50] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1848135 0 ) ( 1848535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[50] + NET gpio_inp_dis[50] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1852135 0 ) ( 1852535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[50] + NET gpio_analog_sel[50] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1856135 0 ) ( 1856535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[50] + NET gpio_dm2[50] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1860135 0 ) ( 1860535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[50] + NET gpio_holdover[50] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1864135 0 ) ( 1864535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_out[50] + NET gpio_out[50] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1868135 0 ) ( 1868535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[50] + NET gpio_vtrip_sel[50] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1872135 0 ) ( 1872535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[50] + NET gpio_ib_mode_sel[50] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1876135 0 ) ( 1876535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[50] + NET gpio_oeb[50] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 1880135 0 ) ( 1880535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[50] + NET gpio_in_h[50] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 1884135 0 ) ( 1884535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in[51] + NET gpio_in[51] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 2094135 0 ) ( 2094535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[51] + NET gpio_slow_sel[51] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2098135 0 ) ( 2098535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_io[51] + NET analog_io[51] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 2102135 0 ) ( 2102535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[51] + NET gpio_dm1[51] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2106135 0 ) ( 2106535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[51] + NET analog_noesd_io[51] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 2110135 0 ) ( 2110535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[51] + NET gpio_analog_en[51] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2114135 0 ) ( 2114535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[51] + NET gpio_dm0[51] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2118135 0 ) ( 2118535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[51] + NET gpio_analog_pol[51] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2122135 0 ) ( 2122535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[51] + NET gpio_inp_dis[51] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2126135 0 ) ( 2126535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[51] + NET gpio_analog_sel[51] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2130135 0 ) ( 2130535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[51] + NET gpio_dm2[51] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2134135 0 ) ( 2134535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[51] + NET gpio_holdover[51] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2138135 0 ) ( 2138535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_out[51] + NET gpio_out[51] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2142135 0 ) ( 2142535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[51] + NET gpio_vtrip_sel[51] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2146135 0 ) ( 2146535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[51] + NET gpio_ib_mode_sel[51] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2150135 0 ) ( 2150535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[51] + NET gpio_oeb[51] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2154135 0 ) ( 2154535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[51] + NET gpio_in_h[51] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 2158135 0 ) ( 2158535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in[52] + NET gpio_in[52] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 2368135 0 ) ( 2368535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[52] + NET gpio_slow_sel[52] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2372135 0 ) ( 2372535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_io[52] + NET analog_io[52] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 2376135 0 ) ( 2376535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[52] + NET gpio_dm1[52] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2380135 0 ) ( 2380535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[52] + NET analog_noesd_io[52] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 2384135 0 ) ( 2384535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[52] + NET gpio_analog_en[52] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2388135 0 ) ( 2388535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[52] + NET gpio_dm0[52] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2392135 0 ) ( 2392535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[52] + NET gpio_analog_pol[52] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2396135 0 ) ( 2396535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[52] + NET gpio_inp_dis[52] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2400135 0 ) ( 2400535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[52] + NET gpio_analog_sel[52] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2404135 0 ) ( 2404535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[52] + NET gpio_dm2[52] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2408135 0 ) ( 2408535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[52] + NET gpio_holdover[52] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2412135 0 ) ( 2412535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_out[52] + NET gpio_out[52] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2416135 0 ) ( 2416535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[52] + NET gpio_vtrip_sel[52] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2420135 0 ) ( 2420535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[52] + NET gpio_ib_mode_sel[52] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2424135 0 ) ( 2424535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[52] + NET gpio_oeb[52] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 2428135 0 ) ( 2428535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[52] + NET gpio_in_h[52] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 2432135 0 ) ( 2432535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in[53] + NET gpio_in[53] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 4317135 0 ) ( 4317535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[53] + NET gpio_slow_sel[53] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4321135 0 ) ( 4321535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_io[53] + NET analog_io[53] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 4325135 0 ) ( 4325535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[53] + NET gpio_dm1[53] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4329135 0 ) ( 4329535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[53] + NET analog_noesd_io[53] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 4333135 0 ) ( 4333535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[53] + NET gpio_analog_en[53] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4337135 0 ) ( 4337535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[53] + NET gpio_dm0[53] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4341135 0 ) ( 4341535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[53] + NET gpio_analog_pol[53] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4345135 0 ) ( 4345535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[53] + NET gpio_inp_dis[53] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4349135 0 ) ( 4349535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[53] + NET gpio_analog_sel[53] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4353135 0 ) ( 4353535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[53] + NET gpio_dm2[53] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4357135 0 ) ( 4357535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[53] + NET gpio_holdover[53] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4361135 0 ) ( 4361535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_out[53] + NET gpio_out[53] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4365135 0 ) ( 4365535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[53] + NET gpio_vtrip_sel[53] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4369135 0 ) ( 4369535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[53] + NET gpio_ib_mode_sel[53] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4373135 0 ) ( 4373535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[53] + NET gpio_oeb[53] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4377135 0 ) ( 4377535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[53] + NET gpio_in_h[53] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 4381135 0 ) ( 4381535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in[54] + NET gpio_in[54] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 4860135 0 ) ( 4860535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[54] + NET gpio_slow_sel[54] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4864135 0 ) ( 4864535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_io[54] + NET analog_io[54] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 4868135 0 ) ( 4868535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[54] + NET gpio_dm1[54] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4872135 0 ) ( 4872535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[54] + NET analog_noesd_io[54] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 4876135 0 ) ( 4876535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[54] + NET gpio_analog_en[54] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4880135 0 ) ( 4880535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[54] + NET gpio_dm0[54] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4884135 0 ) ( 4884535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[54] + NET gpio_analog_pol[54] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4888135 0 ) ( 4888535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[54] + NET gpio_inp_dis[54] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4892135 0 ) ( 4892535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[54] + NET gpio_analog_sel[54] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4896135 0 ) ( 4896535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[54] + NET gpio_dm2[54] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4900135 0 ) ( 4900535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[54] + NET gpio_holdover[54] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4904135 0 ) ( 4904535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_out[54] + NET gpio_out[54] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4908135 0 ) ( 4908535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[54] + NET gpio_vtrip_sel[54] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4912135 0 ) ( 4912535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[54] + NET gpio_ib_mode_sel[54] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4916135 0 ) ( 4916535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[54] + NET gpio_oeb[54] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 4920135 0 ) ( 4920535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[54] + NET gpio_in_h[54] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 4924135 0 ) ( 4924535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in[55] + NET gpio_in[55] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 5134135 0 ) ( 5134535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[55] + NET gpio_slow_sel[55] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5138135 0 ) ( 5138535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_io[55] + NET analog_io[55] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 5142135 0 ) ( 5142535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[55] + NET gpio_dm1[55] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5146135 0 ) ( 5146535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[55] + NET analog_noesd_io[55] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 5150135 0 ) ( 5150535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[55] + NET gpio_analog_en[55] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5154135 0 ) ( 5154535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[55] + NET gpio_dm0[55] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5158135 0 ) ( 5158535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[55] + NET gpio_analog_pol[55] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5162135 0 ) ( 5162535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[55] + NET gpio_inp_dis[55] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5166135 0 ) ( 5166535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[55] + NET gpio_analog_sel[55] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5170135 0 ) ( 5170535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[55] + NET gpio_dm2[55] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5174135 0 ) ( 5174535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[55] + NET gpio_holdover[55] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5178135 0 ) ( 5178535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_out[55] + NET gpio_out[55] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5182135 0 ) ( 5182535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[55] + NET gpio_vtrip_sel[55] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5186135 0 ) ( 5186535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[55] + NET gpio_ib_mode_sel[55] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5190135 0 ) ( 5190535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[55] + NET gpio_oeb[55] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5194135 0 ) ( 5194535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[55] + NET gpio_in_h[55] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 5198135 0 ) ( 5198535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in[56] + NET gpio_in[56] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 5408135 0 ) ( 5408535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[56] + NET gpio_slow_sel[56] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5412135 0 ) ( 5412535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_io[56] + NET analog_io[56] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 5416135 0 ) ( 5416535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[56] + NET gpio_dm1[56] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5420135 0 ) ( 5420535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[56] + NET analog_noesd_io[56] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 5424135 0 ) ( 5424535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[56] + NET gpio_analog_en[56] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5428135 0 ) ( 5428535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[56] + NET gpio_dm0[56] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5432135 0 ) ( 5432535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[56] + NET gpio_analog_pol[56] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5436135 0 ) ( 5436535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[56] + NET gpio_inp_dis[56] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5440135 0 ) ( 5440535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[56] + NET gpio_analog_sel[56] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5444135 0 ) ( 5444535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[56] + NET gpio_dm2[56] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5448135 0 ) ( 5448535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[56] + NET gpio_holdover[56] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5452135 0 ) ( 5452535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_out[56] + NET gpio_out[56] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5456135 0 ) ( 5456535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[56] + NET gpio_vtrip_sel[56] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5460135 0 ) ( 5460535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[56] + NET gpio_ib_mode_sel[56] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5464135 0 ) ( 5464535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[56] + NET gpio_oeb[56] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5468135 0 ) ( 5468535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[56] + NET gpio_in_h[56] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 5472135 0 ) ( 5472535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in[57] + NET gpio_in[57] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 5682135 0 ) ( 5682535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[57] + NET gpio_slow_sel[57] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5686135 0 ) ( 5686535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_io[57] + NET analog_io[57] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 5690135 0 ) ( 5690535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[57] + NET gpio_dm1[57] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5694135 0 ) ( 5694535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[57] + NET analog_noesd_io[57] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 5698135 0 ) ( 5698535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[57] + NET gpio_analog_en[57] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5702135 0 ) ( 5702535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[57] + NET gpio_dm0[57] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5706135 0 ) ( 5706535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[57] + NET gpio_analog_pol[57] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5710135 0 ) ( 5710535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[57] + NET gpio_inp_dis[57] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5714135 0 ) ( 5714535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[57] + NET gpio_analog_sel[57] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5718135 0 ) ( 5718535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[57] + NET gpio_dm2[57] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5722135 0 ) ( 5722535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[57] + NET gpio_holdover[57] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5726135 0 ) ( 5726535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_out[57] + NET gpio_out[57] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5730135 0 ) ( 5730535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[57] + NET gpio_vtrip_sel[57] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5734135 0 ) ( 5734535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[57] + NET gpio_ib_mode_sel[57] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5738135 0 ) ( 5738535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[57] + NET gpio_oeb[57] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5742135 0 ) ( 5742535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[57] + NET gpio_in_h[57] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 5746135 0 ) ( 5746535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in[58] + NET gpio_in[58] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 5956135 0 ) ( 5956535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_slow_sel[58] + NET gpio_slow_sel[58] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5960135 0 ) ( 5960535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_io[58] + NET analog_io[58] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 5964135 0 ) ( 5964535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm1[58] + NET gpio_dm1[58] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5968135 0 ) ( 5968535 1000 ) + PLACED ( 0 0 ) N ;
+- analog_noesd_io[58] + NET analog_noesd_io[58] + DIRECTION INOUT + USE SIGNAL
+  + LAYER met2 ( 5972135 0 ) ( 5972535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_en[58] + NET gpio_analog_en[58] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5976135 0 ) ( 5976535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm0[58] + NET gpio_dm0[58] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5980135 0 ) ( 5980535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_pol[58] + NET gpio_analog_pol[58] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5984135 0 ) ( 5984535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_inp_dis[58] + NET gpio_inp_dis[58] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5988135 0 ) ( 5988535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_analog_sel[58] + NET gpio_analog_sel[58] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5992135 0 ) ( 5992535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_dm2[58] + NET gpio_dm2[58] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 5996135 0 ) ( 5996535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_holdover[58] + NET gpio_holdover[58] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6000135 0 ) ( 6000535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_out[58] + NET gpio_out[58] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6004135 0 ) ( 6004535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_vtrip_sel[58] + NET gpio_vtrip_sel[58] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6008135 0 ) ( 6008535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_ib_mode_sel[58] + NET gpio_ib_mode_sel[58] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6012135 0 ) ( 6012535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_oeb[58] + NET gpio_oeb[58] + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER met2 ( 6016135 0 ) ( 6016535 1000 ) + PLACED ( 0 0 ) N ;
+- gpio_in_h[58] + NET gpio_in_h[58] + DIRECTION INPUT + USE SIGNAL
+  + LAYER met2 ( 6020135 0 ) ( 6020535 1000 ) + PLACED ( 0 0 ) N ;
+END PINS
+END DESIGN

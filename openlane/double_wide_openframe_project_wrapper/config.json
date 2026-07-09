@@ -1,0 +1,57 @@
+{
+    "//": "Double-wide openframe user project wrapper hardening (LibreLane 3).",
+    "//structure": "openframe_user_project-style layout: openlane/<macro>/config.json.",
+    "//footprint": "Same DESIGN_NAME / DIE_AREA / power pins as the padframe's empty",
+    "//footprint2": "wrapper, and the same pad-aligned pin template, so the hardened GDS",
+    "//footprint3": "cell-swaps cleanly into the ../dw_openframe padframe frame.",
+
+    "DESIGN_NAME": "double_wide_openframe_project_wrapper",
+    "VERILOG_FILES": [
+        "dir::../../verilog/rtl/double_wide_openframe_project_wrapper.v"
+    ],
+
+    "meta": {
+        "version": 3,
+        "flow": "Classic",
+        "substituting_steps": {
+            "Magic.DRC": null,
+            "Checker.MagicDRC": null,
+            "KLayout.DRC": null,
+            "Checker.KLayoutDRC": null,
+            "Checker.YosysUnmappedCells": null
+        }
+    },
+
+    "CLOCK_PORT": "gpio_in[0]",
+    "CLOCK_PERIOD": 100,
+    "RUN_CTS": true,
+
+    "FP_SIZING": "absolute",
+    "DIE_AREA": [0, 0, 6754.63, 4766.63],
+    "CORE_AREA": [40, 40, 6714.63, 4726.63],
+
+    "//pin-template": "Fixed, pad-aligned pin locations (shipped from the padframe",
+    "//pin-template2": "generator; keep in sync with ../dw_openframe librelane/wrapper/",
+    "//pin-template3": "pin_template.def) so the wrapper's boundary pins match the frame.",
+    "FP_DEF_TEMPLATE": "dir::pin_template.def",
+    "FP_TEMPLATE_MATCH_MODE": "permissive",
+
+    "VDD_NET": "vccd1",
+    "GND_NET": "vssd1",
+    "VDD_NETS": ["vccd1", "vccd2", "vccd", "vddio", "vdda", "vdda1", "vdda2"],
+    "GND_NETS": ["vssd1", "vssd2", "vssd", "vssio", "vssa", "vssa1", "vssa2"],
+
+    "FP_PDN_MULTILAYER": true,
+    "FP_PDN_VPITCH": 180,
+    "FP_PDN_HPITCH": 180,
+    "ERROR_ON_PDN_VIOLATIONS": false,
+
+    "PL_TARGET_DENSITY_PCT": 5,
+    "FP_PDN_CORE_RING": false,
+    "MAGIC_EXT_UNIQUE": "notopports",
+    "PRIMARY_GDSII_STREAMOUT_TOOL": "klayout",
+
+    "LINTER_DISABLE_WARNINGS": [
+        "DECLFILENAME", "EOFNEWLINE", "PINCONNECTEMPTY", "PINMISSING", "UNUSEDSIGNAL"
+    ]
+}

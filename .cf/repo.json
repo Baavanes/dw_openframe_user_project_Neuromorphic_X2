@@ -1,0 +1,8 @@
+{
+  "version": "v1",
+  "changes": [
+    "Makefile",
+    "openlane/double_wide_openframe_project_wrapper/config.json",
+    "verilog/rtl/double_wide_openframe_project_wrapper.v"
+  ]
+}
