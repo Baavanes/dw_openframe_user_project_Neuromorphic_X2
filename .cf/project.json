@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "pdk": "sky130A",
+  "type": "double_wide",
+  "design": "double_wide_openframe_project_wrapper",
+  "description": "Double-wide openframe counter example (59 GPIOs)",
+  "harness_root": "../dw_openframe",
+  "precheck": {
+    "version": "1.3.4",
+    "timestamp": "2026-07-12T14:22:24.029193+00:00",
+    "pdk": "sky130A",
+    "passed": false,
+    "checks": {
+      "lvs": {
+        "status": "fail",
+        "duration_s": 81.98,
+        "details": "LVS FAILED (stat=1), see /home/marwan/double_wide_openframe/dw_openframe_user_project/precheck_results/12_JUL_2026___14_21_01/logs/LVS_check.log"
+      },
+      "magic_drc": {
+        "status": "skip",
+        "duration_s": 0,
+        "reason": "optional (use --magic-drc to include)"
+      }
+    },
+    "input_file_hash": "af9115e45fd3739719f43717f7c1519ad4114446"
+  }
+}

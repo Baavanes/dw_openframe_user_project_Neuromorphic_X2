@@ -2,6 +2,8 @@
 # store by `nix develop`, or every invocation copies gigabytes and hangs).
 **/runs/
 build/
+signoff/
+precheck_results/
 
 # Hardened binary streams are regenerable via `make harden`; keep them out of
 # git until you deliberately commit a shuttle deliverable.
@@ -20,3 +22,10 @@ __pycache__/
 # Nix
 result
 result-*
+
+# sim artifacts
+*.vcd
+*.vvp
+
+# Magic views (regenerable; can exceed GitHub 100MB)
+mag/*.mag

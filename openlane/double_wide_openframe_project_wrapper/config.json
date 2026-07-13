@@ -36,18 +36,21 @@
     "FP_DEF_TEMPLATE": "dir::pin_template.def",
     "FP_TEMPLATE_MATCH_MODE": "permissive",
 
-    "VDD_NET": "vccd1",
-    "GND_NET": "vssd1",
     "VDD_NETS": ["vccd1", "vccd2", "vccd", "vddio", "vdda", "vdda1", "vdda2"],
     "GND_NETS": ["vssd1", "vssd2", "vssd", "vssio", "vssa", "vssa1", "vssa2"],
 
-    "FP_PDN_MULTILAYER": true,
-    "FP_PDN_VPITCH": 180,
-    "FP_PDN_HPITCH": 180,
+    "PDN_MULTILAYER": true,
+    "PDN_VPITCH": 180,
+    "PDN_HPITCH": 180,
     "ERROR_ON_PDN_VIOLATIONS": false,
 
+    "//sparse": "Counter example is tiny vs. 32 mm^2 die. Skip tap/fill so harden",
+    "//sparse2": "does not insert hundreds of thousands of tap cells.",
+    "RUN_TAP_ENDCAP_INSERTION": false,
+    "RUN_FILL_INSERTION": false,
+
     "PL_TARGET_DENSITY_PCT": 5,
-    "FP_PDN_CORE_RING": false,
+    "PDN_CORE_RING": false,
     "MAGIC_EXT_UNIQUE": "notopports",
     "PRIMARY_GDSII_STREAMOUT_TOOL": "klayout",
 

@@ -1,8 +1,16 @@
 {
   "version": "v1",
+  "type": "double_wide",
+  "design": "double_wide_openframe_project_wrapper",
+  "harness": "../dw_openframe",
+  "pdk": "sky130A",
+  "gpio_count": 59,
+  "user_area_um": [6754.63, 4766.63],
   "changes": [
     "Makefile",
     "openlane/double_wide_openframe_project_wrapper/config.json",
-    "verilog/rtl/double_wide_openframe_project_wrapper.v"
+    "verilog/rtl/double_wide_openframe_project_wrapper.v",
+    "verilog/dv/counter",
+    "lvs/double_wide_openframe_project_wrapper/lvs_config.json"
   ]
 }
