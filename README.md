@@ -201,7 +201,7 @@ make precheck SKIP_CHECKS="lvs oeb"          # Skip specific checks
 
 ---
 
-## Checklist for Shuttle Submission.
+## Checklist for Shuttle Submission
 - [ ] Top-level macro is named `double_wide_openframe_project_wrapper`.
 - [ ] Full Chip Simulation passes for both RTL and GL.
 - [ ] Hardened Macros are LVS and DRC clean.
