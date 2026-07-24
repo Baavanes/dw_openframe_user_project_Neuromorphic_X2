@@ -1,0 +1,6 @@
+#!/home/vboxuser/Neuro_X1_dw_openframe_user_project/openlane/.venv/bin/python3
+import sys
+from idna.cli import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())

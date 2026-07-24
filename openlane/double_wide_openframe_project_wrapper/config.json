@@ -1,60 +1,81 @@
 {
-    "//": "Double-wide openframe user project wrapper hardening (LibreLane 3).",
-    "//structure": "openframe_user_project-style layout: openlane/<macro>/config.json.",
-    "//footprint": "Same DESIGN_NAME / DIE_AREA / power pins as the padframe's empty",
-    "//footprint2": "wrapper, and the same pad-aligned pin template, so the hardened GDS",
-    "//footprint3": "cell-swaps cleanly into the ../dw_openframe padframe frame.",
-
     "DESIGN_NAME": "double_wide_openframe_project_wrapper",
+    "VERILOG_DEFINES": ["USE_POWER_PINS"],
     "VERILOG_FILES": [
         "dir::../../verilog/rtl/double_wide_openframe_project_wrapper.v"
     ],
+    "VERILOG_FILES_BLACKBOX": [
+        "dir::../../verilog/gl/spi_wb_x1_top.v"
+    ],
+    "EXTRA_LEFS": [
+        "dir::../../lef/spi_wb_x1_top.lef"
+    ],
+    "EXTRA_GDS_FILES": [
+        "dir::../../gds/spi_wb_x1_top.gds"
+    ],
+    "EXTRA_LIBS": "dir::../../lib/spi_wb_x1_top.lib",
 
     "meta": {
         "version": 3,
         "flow": "Classic",
         "substituting_steps": {
-            "Magic.DRC": null,
-            "Checker.MagicDRC": null,
-            "KLayout.DRC": null,
-            "Checker.KLayoutDRC": null,
-            "Checker.YosysUnmappedCells": null
+            "Odb.CheckDesignAntennaProperties": null
         }
     },
 
-    "CLOCK_PORT": "gpio_in[0]",
-    "CLOCK_PERIOD": 100,
-    "RUN_CTS": true,
+    "CLOCK_PORT": "gpio_in[38]",
+    "CLOCK_PERIOD": 50,
+    "RUN_CTS": false,
+    "RT_MAX_LAYER": "met4",
+    "GRT_ALLOW_CONGESTION": true,
+    "PNR_SDC_FILE": "dir::pnr.sdc",
+    "SIGNOFF_SDC_FILE": "dir::signoff.sdc",
 
     "FP_SIZING": "absolute",
     "DIE_AREA": [0, 0, 6754.63, 4766.63],
     "CORE_AREA": [40, 40, 6714.63, 4726.63],
-
-    "//pin-template": "Fixed, pad-aligned pin locations (shipped from the padframe",
-    "//pin-template2": "generator; keep in sync with ../dw_openframe librelane/wrapper/",
-    "//pin-template3": "pin_template.def) so the wrapper's boundary pins match the frame.",
     "FP_DEF_TEMPLATE": "dir::pin_template.def",
     "FP_TEMPLATE_MATCH_MODE": "permissive",
+    "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
+
+    "VERILOG_POWER_DEFINE": "USE_POWER_PINS",
+    "ERROR_ON_NL_ASSIGN_STATEMENTS": false,
+    "ERROR_ON_SYNTH_CHECKS": false,
+    "SYNTH_ELABORATE_ONLY": false,
+    "RUN_LINTER": false,
 
     "VDD_NETS": ["vccd1", "vccd2", "vccd", "vddio", "vdda", "vdda1", "vdda2"],
     "GND_NETS": ["vssd1", "vssd2", "vssd", "vssio", "vssa", "vssa1", "vssa2"],
+    "FP_PDN_CFG": "dir::pdn_used_rails.tcl",
+    "FP_PDN_MACRO_HOOKS": "mprj vccd1 vssd1 VDDC1 VSS, mprj vccd2 vssd1 VDDC2 VSS, mprj vdda1 vssd1 VDDA1 VSS, mprj vdda2 vssd1 VDDA2 VSS",
+    "FP_PDN_VPITCH": 180,
+    "FP_PDN_HPITCH": 180,
+    "ERROR_ON_PDN_VIOLATIONS": true,
 
-    "PDN_MULTILAYER": true,
-    "PDN_VPITCH": 180,
-    "PDN_HPITCH": 180,
-    "ERROR_ON_PDN_VIOLATIONS": false,
-
-    "//sparse": "Counter example is tiny vs. 32 mm^2 die. Skip tap/fill so harden",
-    "//sparse2": "does not insert hundreds of thousands of tap cells.",
-    "RUN_TAP_ENDCAP_INSERTION": false,
-    "RUN_FILL_INSERTION": false,
-
+    "RUN_TAP_ENDCAP_INSERTION": true,
+    "RUN_FILL_INSERTION": true,
     "PL_TARGET_DENSITY_PCT": 5,
-    "PDN_CORE_RING": false,
-    "MAGIC_EXT_UNIQUE": "notopports",
-    "PRIMARY_GDSII_STREAMOUT_TOOL": "klayout",
+    "RUN_POST_GPL_DESIGN_REPAIR": true,
+    "RUN_POST_CTS_RESIZER_TIMING": false,
+    "RUN_POST_GRT_RESIZER_TIMING": true,
+    "DESIGN_REPAIR_BUFFER_INPUT_PORTS": false,
 
-    "LINTER_DISABLE_WARNINGS": [
-        "DECLFILENAME", "EOFNEWLINE", "PINCONNECTEMPTY", "PINMISSING", "UNUSEDSIGNAL"
-    ]
+    "RUN_ANTENNA_REPAIR": true,
+    "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "HEURISTIC_ANTENNA_THRESHOLD": 50,
+    "DIODE_ON_PORTS": "both",
+
+    "RUN_SPEF_EXTRACTION": true,
+    "RUN_MCSTA": true,
+    "RUN_IRDROP_REPORT": true,
+    "RUN_LVS": true,
+    "RUN_MAGIC_DRC": true,
+    "RUN_KLAYOUT_DRC": true,
+    "KLAYOUT_DRC_THREADS": 1,
+    "RUN_KLAYOUT_XOR": true,
+    "RUN_MAGIC_WRITE_LEF": false,
+    "MAGIC_DEF_LABELS": false,
+    "MAGIC_EXT_ABSTRACT": true,
+    "PRIMARY_GDSII_STREAMOUT_TOOL": "klayout",
+    "RUN_KLAYOUT_STREAMOUT": true
 }
