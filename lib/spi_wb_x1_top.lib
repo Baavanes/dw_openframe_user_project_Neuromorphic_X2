@@ -1,0 +1,127 @@
+library ("spi_wb_x1_top_stub") {
+    delay_model : "table_lookup";
+    time_unit : "1ns";
+    voltage_unit : "1V";
+    current_unit : "1mA";
+    leakage_power_unit : "1nW";
+    capacitive_load_unit(1.0000000000, "pf");
+    input_threshold_pct_rise : 50.0;
+    input_threshold_pct_fall : 50.0;
+    output_threshold_pct_rise : 50.0;
+    output_threshold_pct_fall : 50.0;
+    slew_lower_threshold_pct_rise : 20.0;
+    slew_upper_threshold_pct_rise : 80.0;
+    slew_lower_threshold_pct_fall : 20.0;
+    slew_upper_threshold_pct_fall : 80.0;
+    cell ("spi_wb_x1_top") {
+        area : 9100000.0;
+        pg_pin ("VDDA1") {
+            pg_type : primary_power;
+            voltage_name : "VDDA1";
+        }
+        pg_pin ("VDDA2") {
+            pg_type : primary_power;
+            voltage_name : "VDDA2";
+        }
+        pg_pin ("VDDC1") {
+            pg_type : primary_power;
+            voltage_name : "VDDC1";
+        }
+        pg_pin ("VDDC2") {
+            pg_type : primary_power;
+            voltage_name : "VDDC2";
+        }
+        pg_pin ("VSS") {
+            pg_type : primary_ground;
+            voltage_name : "VSS";
+        }
+        pin ("Bias_comp2") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("Iref") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("ScanInCC") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("ScanInDL") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("ScanInDR") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("TM") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("Vbias") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("Vcc_read") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("Vcc_set") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("Vcc_wl_read") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("Vcc_wl_reset") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("Vcc_wl_set") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("Vcomp") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("clk") {
+            direction : input;
+            capacitance : 0.0100;
+            clock : true;
+        }
+        pin ("dc_bias") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("rst") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("spi_cs_n") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("spi_mosi") {
+            direction : input;
+            capacitance : 0.0100;
+        }
+        pin ("spi_sclk") {
+            direction : input;
+            capacitance : 0.0100;
+            clock : true;
+        }
+        pin ("ScanOutCC") {
+            direction : output;
+            function : "0";
+            max_capacitance : 1.0000;
+        }
+        pin ("spi_miso") {
+            direction : output;
+            function : "0";
+            max_capacitance : 1.0000;
+        }
+    }
+}
