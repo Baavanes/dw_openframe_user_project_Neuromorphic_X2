@@ -1,10 +1,4 @@
-// Example user design filling the double-wide openframe user area.
-//
-// Keeps the EXACT same module name and port list as the empty template so it
-// can be hardened against the same footprint and cell-swapped into the padframe.
-//
-// Behaviour: a 32-bit counter clocked from gpio 0, reset (active-low) from
-// gpio 1, driving its low bits out on gpios 2..33; all other gpios are inputs.
+// SPDX-License-Identifier: Apache-2.0
 
 `default_nettype none
 
@@ -43,47 +37,94 @@ module double_wide_openframe_project_wrapper (
     inout  wire [58:0] analog_io,
     inout  wire [58:0] analog_noesd_io
 );
-    wire clk   = gpio_in[0];
-    wire rst_n = gpio_in[1];
 
-    reg [31:0] ctr;
-    always @(posedge clk or negedge rst_n) begin
-        if (!rst_n)
-            ctr <= 32'd0;
-        else
-            ctr <= ctr + 32'd1;
-    end
+    localparam integer GPIO_USER_RST   = 0;
+    localparam integer GPIO_SPI_MISO   = 1;
+    localparam integer GPIO_SPI_MOSI   = 2;
+    localparam integer GPIO_SPI_CS_N   = 3;
+    localparam integer GPIO_SPI_SCLK   = 4;
+    localparam integer GPIO_SCAN_IN_DR = 21;
+    localparam integer GPIO_SCAN_IN_DL = 22;
+    localparam integer GPIO_SCAN_OUT   = 23;
+    localparam integer GPIO_SCAN_IN_CC = 35;
+    localparam integer GPIO_TM         = 36;
+    localparam integer GPIO_USER_CLK   = 38;
 
-    // gpio[1:0] = inputs (clk, rst_n); gpio[33:2] = counter outputs; rest inputs
-    assign gpio_out[1:0]   = 2'b00;
-    assign gpio_out[33:2]  = ctr;
-    assign gpio_out[58:34] = 25'b0;
+    localparam [58:0] GPIO_SPI_MISO_PAD =
+        (59'b1 << GPIO_SPI_MISO);
 
-    assign gpio_oeb[1:0]   = 2'b11;          // inputs
-    assign gpio_oeb[33:2]  = {32{1'b0}};     // drive
-    assign gpio_oeb[58:34] = {25{1'b1}};
+    localparam [58:0] GPIO_OUTPUT_PADS =
+        (59'b1 << GPIO_SPI_MISO) |
+        (59'b1 << GPIO_SCAN_OUT);
 
-    // dm = 001 input, 110 output
-    assign gpio_dm0[1:0]   = 2'b11;
-    assign gpio_dm0[33:2]  = {32{1'b0}};
-    assign gpio_dm0[58:34] = {25{1'b1}};
+    localparam [58:0] GPIO_ANALOG_PADS =
+        (59'b1 << 25) |
+        (59'b1 << 26) |
+        (59'b1 << 27) |
+        (59'b1 << 28) |
+        (59'b1 << 29) |
+        (59'b1 << 30) |
+        (59'b1 << 31) |
+        (59'b1 << 32) |
+        (59'b1 << 33) |
+        (59'b1 << 34);
 
-    assign gpio_dm1[1:0]   = 2'b00;
-    assign gpio_dm1[33:2]  = {32{1'b1}};
-    assign gpio_dm1[58:34] = {25{1'b0}};
+    wire spi_miso;
+    wire scanout_cc;
 
-    assign gpio_dm2[1:0]   = 2'b00;
-    assign gpio_dm2[33:2]  = {32{1'b1}};
-    assign gpio_dm2[58:34] = {25{1'b0}};
+    spi_wb_x1_top mprj (
+`ifdef USE_POWER_PINS
+        .VDDC1(vccd1),
+        .VDDC2(vccd2),
+        .VDDA1(vdda1),
+        .VDDA2(vdda2),
+        .VSS(vssd1),
+`endif
+        .clk(gpio_in[GPIO_USER_CLK]),
+        .rst(gpio_in[GPIO_USER_RST]),
+        .spi_sclk(gpio_in[GPIO_SPI_SCLK]),
+        .spi_cs_n(gpio_in[GPIO_SPI_CS_N]),
+        .spi_mosi(gpio_in[GPIO_SPI_MOSI]),
+        .spi_miso(spi_miso),
+        .ScanInCC(gpio_in[GPIO_SCAN_IN_CC]),
+        .ScanInDL(gpio_in[GPIO_SCAN_IN_DL]),
+        .ScanInDR(gpio_in[GPIO_SCAN_IN_DR]),
+        .TM(gpio_in[GPIO_TM]),
+        .ScanOutCC(scanout_cc),
+        .Iref(analog_io[34]),
+        .Vcc_read(analog_io[33]),
+        .Vcomp(analog_io[32]),
+        .Bias_comp2(analog_io[31]),
+        .Vcc_wl_set(analog_io[30]),
+        .Vbias(analog_io[29]),
+        .Vcc_wl_reset(analog_io[28]),
+        .Vcc_set(analog_io[27]),
+        .Vcc_wl_read(analog_io[26]),
+        .dc_bias(analog_io[25])
+    );
 
-    assign gpio_inp_dis     = {59{1'b0}};
-    assign gpio_ib_mode_sel = {59{1'b0}};
-    assign gpio_vtrip_sel   = {59{1'b0}};
-    assign gpio_slow_sel    = {59{1'b0}};
-    assign gpio_holdover    = {59{1'b0}};
-    assign gpio_analog_en   = {59{1'b0}};
-    assign gpio_analog_sel  = {59{1'b0}};
-    assign gpio_analog_pol  = {59{1'b0}};
+    assign gpio_out =
+        ({59{spi_miso}} & GPIO_SPI_MISO_PAD) |
+        ({59{scanout_cc}} & (59'b1 << GPIO_SCAN_OUT));
+
+    // MISO is high impedance while CS_N is high; ScanOutCC always drives.
+    assign gpio_oeb =
+        (~GPIO_OUTPUT_PADS) |
+        ({59{gpio_in[GPIO_SPI_CS_N]}} & GPIO_SPI_MISO_PAD);
+
+    assign gpio_inp_dis = GPIO_ANALOG_PADS | GPIO_OUTPUT_PADS;
+    assign gpio_ib_mode_sel = 59'b0;
+    assign gpio_vtrip_sel = 59'b0;
+    assign gpio_slow_sel = 59'b0;
+    assign gpio_holdover = 59'b0;
+    assign gpio_analog_en = GPIO_ANALOG_PADS;
+    assign gpio_analog_sel = GPIO_ANALOG_PADS;
+    assign gpio_analog_pol = 59'b0;
+
+    // Digital inputs use DM=001, digital outputs use DM=110, analog pads use 000.
+    assign gpio_dm0 = ~(GPIO_ANALOG_PADS | GPIO_OUTPUT_PADS);
+    assign gpio_dm1 = GPIO_OUTPUT_PADS;
+    assign gpio_dm2 = GPIO_OUTPUT_PADS;
 
 endmodule
 
