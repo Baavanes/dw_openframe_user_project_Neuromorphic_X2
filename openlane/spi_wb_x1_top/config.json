@@ -33,6 +33,9 @@
         "VDDA2"
     ],
     "GND_NETS": [
+        "VSS",
+        "VSS",
+        "VSS",
         "VSS"
     ],
     "FP_PDN_MACRO_HOOKS": "u_neuro VDDC1 VSS VDDC1 VSS, u_neuro VDDC2 VSS VDDC2 VSS, u_neuro VDDA1 VSS VDDA1 VSS, u_neuro VDDA2 VSS VDDA2 VSS",
@@ -56,7 +59,7 @@
     "RUN_SPEF_EXTRACTION": false,
     "RUN_MCSTA": false,
     "RUN_IRDROP_REPORT": false,
-    "RUN_MAGIC_DRC": false,
-    "RUN_KLAYOUT_DRC": false,
-    "RUN_LVS": false
+    "RUN_MAGIC_DRC": true,
+    "RUN_KLAYOUT_DRC": true,
+    "RUN_LVS": true
 }
