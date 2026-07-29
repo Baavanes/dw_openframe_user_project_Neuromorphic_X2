@@ -77,6 +77,8 @@ define_pdn_grid \
     -starts_with POWER \
     -halo "$::env(FP_PDN_HORIZONTAL_HALO) $::env(FP_PDN_VERTICAL_HALO)"
 
+# The X1 macro exposes its supply shapes on met3.  The wrapper mesh uses
+# met4/met5, so lift those macro shapes into the vertical met4 straps here.
 add_pdn_connect \
     -grid macro \
-    -layers "$::env(FP_PDN_VERTICAL_LAYER) $::env(FP_PDN_HORIZONTAL_LAYER)"
+    -layers "met3 $::env(FP_PDN_VERTICAL_LAYER)"
