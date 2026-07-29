@@ -17,13 +17,7 @@ export PYTHONPATH := $(KLAYOUT_PYMOD):$(CF_PRECHECK)/src:$(PYTHONPATH)
 
 # Let librelane resolve the ciel-managed PDK (see ../dw_openframe/Makefile notes:
 # --manual-pdk mangles this PDK's LIB / DEFAULT_CORNER and breaks synthesis).
-LIBRELANE = $(CURDIR)/openlane/.venv/bin/python -m librelane \
-	-m $(CURDIR) \
-	-m $(PDK_ROOT) \
-	--docker-no-tty \
-	--dockerized \
-	--pdk-root $(PDK_ROOT) \
-	--pdk $(PDK)
+LIBRELANE = librelane --pdk-root $(PDK_ROOT) --pdk $(PDK)
 
 # The macro to harden (a subdir under openlane/, openframe_user_project-style).
 DESIGN ?= double_wide_openframe_project_wrapper
@@ -51,7 +45,7 @@ list:
 ## Prefer LibreLane directly when available (e.g. inside `nix develop`);
 ## otherwise try `cf harden`.
 harden:
-	@if [ -x "$(CURDIR)/openlane/.venv/bin/python" ]; then \
+	@if command -v librelane >/dev/null 2>&1; then \
 		$(LIBRELANE) openlane/$(DESIGN)/config.json --save-views-to .; \
 	elif command -v cf >/dev/null 2>&1; then \
 		cf harden $(DESIGN); \
@@ -72,7 +66,7 @@ verify-gl:
 ## Run cf-precheck (workspace fork) against this project.
 ## Golden root (-c) is the double-wide harness ../dw_openframe.
 ## Stock `cf precheck` uses Docker + PyPI cf-precheck + /opt/caravel and does
-## not yet understand double-wide; use this target (or PYTHONPATH=â¦ cf-precheck).
+## not yet understand double-wide; use this target (or PYTHONPATH=… cf-precheck).
 CHECKS ?=
 SKIP_CHECKS ?=
 precheck run-precheck:
