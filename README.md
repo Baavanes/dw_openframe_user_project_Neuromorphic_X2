@@ -1,99 +1,178 @@
-# Double-wide OpenFrame Neuromorphic X1 flow repro bundle
+# Commands to run the double-wide OpenFrame flow
 
-Base GitHub repo:
+This assumes you already made your own GitHub repo using the provided project
+files and then cloned it.
+
+The base template is:
 
 ```bash
-git clone https://github.com/chipfoundry/dw_openframe_user_project.git
-git checkout 1930e728be1ed785c472edee35bf2a4edd0795a7
+https://github.com/chipfoundry/dw_openframe_user_project.git
 ```
 
-Final successful VM project:
+Keep the original `Makefile` from that repository. The files in this bundle are
+the design collateral to overlay into that repo; they do not replace the repo
+Makefile.
+
+## 1. Clone your repo
+
+```bash
+git clone <your-github-repo-url>
+cd <your-repo-folder>
+```
+
+## 2. Install ChipFoundry CLI
+
+```bash
+python3 -m pip install --upgrade 'chipfoundry-cli>=2'
+cf --help
+```
+
+## 3. Initialize the project
+
+Run this before any other `cf` command:
+
+```bash
+cf init
+```
+
+This creates/updates `.cf/project.json` for the project.
+
+## 4. Set up PDK, LibreLane/OpenLane, and harness
+
+```bash
+cf setup
+```
+
+Alternative from the GitHub README:
+
+```bash
+make setup
+```
+
+## 5. Confirm the hardenable configs
+
+```bash
+cf harden --list
+```
+
+You should see:
 
 ```text
-/home/vboxuser/dw_openframe_user_Neuromorphic_X1_32x32
+double_wide_openframe_project_wrapper
 ```
 
-Final successful run tag:
+## 6. Run the normal README hardening flow
+
+```bash
+cf harden double_wide_openframe_project_wrapper
+```
+
+Alternative from the GitHub README/Makefile:
+
+```bash
+nix develop --command make harden
+```
+
+or, if you are already inside a shell where `librelane` is available:
+
+```bash
+make harden
+```
+
+## 7. If LVS fails only because of Magic `_uq0` top supply pin labels
+
+For this Neuromorphic X1 migration, the flow was DRC-clean and topology-LVS-clean,
+but Magic GDS SPICE extraction gave disconnected top-level supply pin names such
+as:
 
 ```text
-FINAL_CLOSURE_CANONICAL_SPICE_20260729_121129
+vccd_uq0
+vdda_uq0
+vddio_uq0
+vssa_uq0
+vssd_uq0
+vssio_uq0
 ```
 
-Final run command used:
+The final successful run fixed that by:
+
+1. Running through Magic SPICE extraction and illegal-overlap checking.
+2. Canonicalizing those top supply pin labels in the extracted SPICE for LVS only.
+3. Resuming from Netgen LVS through final manufacturability.
+
+Use the included script for that exact proven flow:
 
 ```bash
-proj=/home/vboxuser/dw_openframe_user_Neuromorphic_X1_32x32
-design=double_wide_openframe_project_wrapper
-tag=FINAL_CLOSURE_CANONICAL_SPICE_20260729_121129
-state=$proj/openlane/$design/lvs_patch_canonical_pins/state_66_canonical_spice.json
-cfg=openlane/$design/config.json
-
-$proj/openlane/.venv/bin/python3 -m librelane \
-  -m "$proj" -m /home/vboxuser/.ciel \
-  --docker-no-tty --dockerized \
-  --pdk-root /home/vboxuser/.ciel \
-  --pdk sky130A \
-  --run-tag "$tag" \
-  --from Netgen.LVS \
-  --with-initial-state "$state" \
-  "$cfg"
-```
-
-The final clean result used this flow shape:
-
-1. Run the design normally through `Checker.IllegalOverlap`.
-2. Patch Magic's GDS-extracted SPICE top-level supply labels from `_uq0` names to canonical names for LVS only.
-3. Resume from `Netgen.LVS` through final manufacturability.
-
-Use the repro script:
-
-```bash
-cd /path/to/dw_openframe_flow_repro
 bash run_double_openframe_flow.sh
 ```
 
-The script assumes the VM has LibreLane available at:
-
-```text
-/home/vboxuser/dw_openframe_user_Neuromorphic_X1_32x32/openlane/.venv/bin/python3
-```
-
-If not, set:
+Or run the two LibreLane commands manually:
 
 ```bash
-export LIBRELANE_PY=/path/to/python-that-can-run-librelane
+proj=$PWD
+design=double_wide_openframe_project_wrapper
+tag_base=MANUAL_TO_ILLEGAL_OVERLAP
+
+$proj/openlane/.venv/bin/python3 -m librelane \
+  -m "$proj" -m "$HOME/.ciel" \
+  --docker-no-tty --dockerized \
+  --pdk-root "$HOME/.ciel" \
+  --pdk sky130A \
+  --run-tag "$tag_base" \
+  --to Checker.IllegalOverlap \
+  openlane/$design/config.json
 ```
 
-Important files in this bundle:
+Patch the SPICE/state using the patch block in `run_double_openframe_flow.sh`,
+then resume:
 
-```text
-verilog/rtl/double_wide_openframe_project_wrapper.v
-openlane/double_wide_openframe_project_wrapper/config.json
-openlane/double_wide_openframe_project_wrapper/macro.cfg
-openlane/double_wide_openframe_project_wrapper/pdn_used_rails.tcl
-openlane/double_wide_openframe_project_wrapper/pin_template.def
-openlane/double_wide_openframe_project_wrapper/pnr.sdc
-openlane/double_wide_openframe_project_wrapper/signoff.sdc
-verilog/rtl/spi_wb_x1_top.v
-verilog/gl/Neuromorphic_X1_wb.v
-lef/Neuromorphic_X1_wb.lef
-gds/Neuromorphic_X1_wb.gds
-lib/Neuromorphic_X1_wb.lib
+```bash
+tag_final=MANUAL_FINAL_CANONICAL_SPICE
+patched_state=$proj/openlane/$design/lvs_patch_canonical_pins/state_66_canonical_spice.json
+
+$proj/openlane/.venv/bin/python3 -m librelane \
+  -m "$proj" -m "$HOME/.ciel" \
+  --docker-no-tty --dockerized \
+  --pdk-root "$HOME/.ciel" \
+  --pdk sky130A \
+  --run-tag "$tag_final" \
+  --from Netgen.LVS \
+  --with-initial-state "$patched_state" \
+  openlane/$design/config.json
 ```
 
-Verified final metrics:
+## 8. Optional: integrate hardened wrapper into the double-wide harness
 
-```text
-LVS errors: 0
-LVS unmatched pins/nets/devices: 0
-Magic DRC: 0
-KLayout DRC: 0
-XOR differences: 0
-Routing DRC final: 0
-Setup violations: 0
-Hold violations: 0
-Max slew violations: 0
-Max cap violations: 0
-Power-grid violations: 0
-Antenna violating pins/nets: 32 / 32
+After hardening, the GitHub README shows:
+
+```bash
+cd ../dw_openframe
+nix develop --command make integrate \
+  USER_GDS=../dw_openframe_user_project/gds/double_wide_openframe_project_wrapper.gds
 ```
+
+If your repo folder has a different name, replace
+`../dw_openframe_user_project/...` with the path to your repo’s generated GDS.
+
+## 9. Optional: local precheck
+
+For double-wide, the GitHub README says to use:
+
+```bash
+make precheck
+```
+
+You can also run selected/skipped checks:
+
+```bash
+make precheck CHECKS="topcell_check xor"
+make precheck SKIP_CHECKS="lvs oeb"
+```
+
+## Notes
+
+- `cf harden double_wide_openframe_project_wrapper` is the normal README command.
+- `make harden` uses the repository Makefile.
+- The exact final successful Neuromorphic X1 closure used the included
+  `run_double_openframe_flow.sh` because it performs the LVS-only canonical SPICE
+  handoff that the simple one-shot `cf harden` command does not perform.
