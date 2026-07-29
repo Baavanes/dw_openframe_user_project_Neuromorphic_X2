@@ -1,19 +1,21 @@
 {
     "DESIGN_NAME": "double_wide_openframe_project_wrapper",
     "VERILOG_DEFINES": ["USE_POWER_PINS"],
+    "VERILOG_POWER_DEFINE": "USE_POWER_PINS",
     "VERILOG_FILES": [
-        "dir::../../verilog/rtl/double_wide_openframe_project_wrapper.v"
+        "dir::../../verilog/rtl/double_wide_openframe_project_wrapper.v",
+        "dir::../../verilog/rtl/spi_wb_x1_top.v"
     ],
     "VERILOG_FILES_BLACKBOX": [
-        "dir::../../verilog/gl/spi_wb_x1_top.v"
+        "dir::../../verilog/gl/Neuromorphic_X1_wb.v"
     ],
     "EXTRA_LEFS": [
-        "dir::../../lef/spi_wb_x1_top.lef"
+        "dir::../../lef/Neuromorphic_X1_wb.lef"
     ],
     "EXTRA_GDS_FILES": [
-        "dir::../../gds/spi_wb_x1_top.gds"
+        "dir::../../gds/Neuromorphic_X1_wb.gds"
     ],
-    "EXTRA_LIBS": "dir::../../lib/spi_wb_x1_top.lib",
+    "EXTRA_LIBS": "dir::../../lib/Neuromorphic_X1_wb.lib",
 
     "meta": {
         "version": 3,
@@ -25,9 +27,12 @@
 
     "CLOCK_PORT": "gpio_in[38]",
     "CLOCK_PERIOD": 50,
-    "RUN_CTS": false,
-    "RT_MAX_LAYER": "met4",
-    "GRT_ALLOW_CONGESTION": true,
+    "RUN_CTS": true,
+    "CTS_CLK_MAX_WIRE_LENGTH": 1000,
+    "RT_MAX_LAYER": "met5",
+    "GRT_ALLOW_CONGESTION": false,
+    "GRT_ADJUSTMENT": 0.0,
+    "GRT_OVERFLOW_ITERS": 150,
     "PNR_SDC_FILE": "dir::pnr.sdc",
     "SIGNOFF_SDC_FILE": "dir::signoff.sdc",
 
@@ -35,19 +40,20 @@
     "DIE_AREA": [0, 0, 6754.63, 4766.63],
     "CORE_AREA": [40, 40, 6714.63, 4726.63],
     "FP_DEF_TEMPLATE": "dir::pin_template.def",
-    "FP_TEMPLATE_MATCH_MODE": "permissive",
+    "FP_TEMPLATE_MATCH_MODE": "strict",
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
 
-    "VERILOG_POWER_DEFINE": "USE_POWER_PINS",
     "ERROR_ON_NL_ASSIGN_STATEMENTS": false,
-    "ERROR_ON_SYNTH_CHECKS": false,
+    "ERROR_ON_SYNTH_CHECKS": true,
     "SYNTH_ELABORATE_ONLY": false,
-    "RUN_LINTER": false,
+    "RUN_LINTER": true,
 
     "VDD_NETS": ["vccd1", "vccd2", "vccd", "vddio", "vdda", "vdda1", "vdda2"],
     "GND_NETS": ["vssd1", "vssd2", "vssd", "vssio", "vssa", "vssa1", "vssa2"],
     "FP_PDN_CFG": "dir::pdn_used_rails.tcl",
-    "FP_PDN_MACRO_HOOKS": "mprj vccd1 vssd1 VDDC1 VSS, mprj vccd2 vssd1 VDDC2 VSS, mprj vdda1 vssd1 VDDA1 VSS, mprj vdda2 vssd1 VDDA2 VSS",
+    "FP_PDN_MACRO_HOOKS": "mprj.u_wb_slave vccd1 vssd1 VDDC1 VSS, mprj.u_wb_slave vccd2 vssd1 VDDC2 VSS, mprj.u_wb_slave vdda1 vssd1 VDDA1 VSS, mprj.u_wb_slave vdda2 vssd1 VDDA2 VSS",
+    "FP_PDN_VERTICAL_LAYER": "met4",
+    "FP_PDN_HORIZONTAL_LAYER": "met5",
     "FP_PDN_VPITCH": 180,
     "FP_PDN_HPITCH": 180,
     "ERROR_ON_PDN_VIOLATIONS": true,
@@ -56,14 +62,26 @@
     "RUN_FILL_INSERTION": true,
     "PL_TARGET_DENSITY_PCT": 5,
     "RUN_POST_GPL_DESIGN_REPAIR": true,
-    "RUN_POST_CTS_RESIZER_TIMING": false,
+    "RUN_POST_GRT_DESIGN_REPAIR": true,
+    "DESIGN_REPAIR_MAX_WIRE_LENGTH": 800,
+    "GRT_DESIGN_REPAIR_RUN_GRT": true,
+    "GRT_DESIGN_REPAIR_MAX_WIRE_LENGTH": 800,
+    "GRT_DESIGN_REPAIR_MAX_SLEW_PCT": 20,
+    "GRT_DESIGN_REPAIR_MAX_CAP_PCT": 20,
+    "RUN_POST_CTS_RESIZER_TIMING": true,
     "RUN_POST_GRT_RESIZER_TIMING": true,
-    "DESIGN_REPAIR_BUFFER_INPUT_PORTS": false,
+    "DESIGN_REPAIR_BUFFER_INPUT_PORTS": true,
+    "DESIGN_REPAIR_BUFFER_OUTPUT_PORTS": false,
+    "RSZ_DONT_TOUCH_RX": "^analog_io.*",
+    "RSZ_DONT_TOUCH_LIST": ["mprj.u_macro_rst_buf"],
+    "MAX_TRANSITION_CONSTRAINT": 1.0,
+    "MAX_CAPACITANCE_CONSTRAINT": 0.2,
+    "MAX_FANOUT_CONSTRAINT": 16,
 
-    "RUN_ANTENNA_REPAIR": true,
-    "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "RUN_ANTENNA_REPAIR": false,
+    "RUN_HEURISTIC_DIODE_INSERTION": false,
     "HEURISTIC_ANTENNA_THRESHOLD": 50,
-    "DIODE_ON_PORTS": "both",
+    "DIODE_ON_PORTS": "none",
 
     "RUN_SPEF_EXTRACTION": true,
     "RUN_MCSTA": true,
@@ -75,7 +93,17 @@
     "RUN_KLAYOUT_XOR": true,
     "RUN_MAGIC_WRITE_LEF": false,
     "MAGIC_DEF_LABELS": false,
-    "MAGIC_EXT_ABSTRACT": true,
+    "MAGIC_EXT_USE_GDS": true,
+    "MAGIC_NO_EXT_UNIQUE": false,
+    "MAGIC_EXT_ABSTRACT_CELLS": ["Neuromorphic_X1_wb"],
     "PRIMARY_GDSII_STREAMOUT_TOOL": "klayout",
-    "RUN_KLAYOUT_STREAMOUT": true
+    "RUN_KLAYOUT_STREAMOUT": true,
+
+    "ERROR_ON_MAGIC_DRC": true,
+    "ERROR_ON_KLAYOUT_DRC": true,
+    "ERROR_ON_LVS_ERROR": true,
+    "ERROR_ON_DISCONNECTED_PINS": true,
+    "TIMING_VIOLATION_CORNERS": ["*"],
+    "MAX_SLEW_VIOLATION_CORNERS": ["*"],
+    "MAX_CAP_VIOLATION_CORNERS": ["*"]
 }
