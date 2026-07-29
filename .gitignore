@@ -7,8 +7,8 @@ precheck_results/
 
 # Hardened binary streams are regenerable via `make harden`; keep them out of
 # git until you deliberately commit a shuttle deliverable.
-*.gds
-*.gds.gz
+# *.gds
+# *.gds.gz
 *.spef
 *.sdf
 
