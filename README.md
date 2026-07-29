@@ -16,8 +16,8 @@ Makefile.
 ## 1. Clone your repo
 
 ```bash
-git clone <your-github-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/BMsemi/dw_openframe_user_project_Neuromorphic_X2.git
+cd dw_openframe_user_project_Neuromorphic_X2
 ```
 
 ## 2. Install ChipFoundry CLI
