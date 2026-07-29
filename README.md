@@ -1,107 +1,99 @@
-<div align="center">
+# Double-wide OpenFrame Neuromorphic X1 flow repro bundle
 
-<img src="https://umsousercontent.com/lib_lnlnuhLgkYnZdkSC/hj0vk05j0kemus1i.png" alt="ChipFoundry Logo" height="140" />
-
-# Neuromorphic X2 Double-Wide OpenFrame
-
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![PDK](https://img.shields.io/badge/PDK-Sky130A-2f855a.svg)](https://github.com/google/skywater-pdk)
-
-</div>
-
-The RTL, OpenLane configurations, GDS, LEF, LIB, and gate-level files required
-to run the Double-Wide OpenFrame flow are included in this repository.
-
-## 1. Install the Required Tools
-
-Use Ubuntu 22.04 with Docker installed and running.
+Base GitHub repo:
 
 ```bash
-sudo apt-get update
-sudo apt-get install -y \
-  git make python3 python3-pip python3-venv \
-  iverilog klayout magic netgen
-
-docker run --rm hello-world
-
-python3 -m pip install --user 'chipfoundry-cli>=2'
-export PATH="$HOME/.local/bin:$PATH"
-cf --version
+git clone https://github.com/chipfoundry/dw_openframe_user_project.git
+git checkout 1930e728be1ed785c472edee35bf2a4edd0795a7
 ```
 
-## 2. Clone the Repository
-
-```bash
-git clone https://github.com/BMsemi/dw_openframe_user_project_Neuromorphic_X2.git
-cd dw_openframe_user_project_Neuromorphic_X2
-```
-
-## 3. Set Up OpenLane and the PDK
-
-```bash
-export PATH="$HOME/.local/bin:$PATH"
-
-cf setup
-
-export PATH="$PWD/openlane/.venv/bin:$HOME/.local/bin:$PATH"
-make setup
-```
-
-Do not run `cf init`; the project configuration is already included.
-
-## 4. Run the OpenLane Flow
-
-The supplied `spi_wb_x1_top` GDS, LEF, LIB, and gate-level netlist are used by
-the final wrapper flow.
-
-```bash
-export PATH="$PWD/openlane/.venv/bin:$HOME/.local/bin:$PATH"
-
-make clean
-make DESIGN=double_wide_openframe_project_wrapper harden
-```
-
-The flow keeps:
-
-```json
-"GRT_ALLOW_CONGESTION": true
-```
-
-To rebuild `spi_wb_x1_top` before running the wrapper, use:
-
-```bash
-make DESIGN=spi_wb_x1_top harden
-make DESIGN=double_wide_openframe_project_wrapper harden
-```
-
-## 5. Check the Results
-
-```bash
-LATEST_RUN="$(find runs -maxdepth 1 -type d -name 'RUN_*' | sort | tail -n 1)"
-
-tail -n 30 "$LATEST_RUN/flow.log"
-
-grep -E \
-  '^(flow__errors__count|route__drc_errors|magic__drc_error__count|klayout__drc_error__count|design__xor_difference__count|design__lvs_error__count),' \
-  metrics.csv
-
-python3 openlane/validate_final_openframe_views.py "$LATEST_RUN"
-```
-
-Required results:
+Final successful VM project:
 
 ```text
-Flow complete.
-All displayed metrics = 0
-"validation_passed": true
+/home/vboxuser/dw_openframe_user_Neuromorphic_X1_32x32
 ```
 
-Generated final files:
+Final successful run tag:
 
 ```text
-gds/double_wide_openframe_project_wrapper.gds
-lef/double_wide_openframe_project_wrapper.lef
-verilog/gl/double_wide_openframe_project_wrapper.v
-metrics.csv
-metrics.json
+FINAL_CLOSURE_CANONICAL_SPICE_20260729_121129
+```
+
+Final run command used:
+
+```bash
+proj=/home/vboxuser/dw_openframe_user_Neuromorphic_X1_32x32
+design=double_wide_openframe_project_wrapper
+tag=FINAL_CLOSURE_CANONICAL_SPICE_20260729_121129
+state=$proj/openlane/$design/lvs_patch_canonical_pins/state_66_canonical_spice.json
+cfg=openlane/$design/config.json
+
+$proj/openlane/.venv/bin/python3 -m librelane \
+  -m "$proj" -m /home/vboxuser/.ciel \
+  --docker-no-tty --dockerized \
+  --pdk-root /home/vboxuser/.ciel \
+  --pdk sky130A \
+  --run-tag "$tag" \
+  --from Netgen.LVS \
+  --with-initial-state "$state" \
+  "$cfg"
+```
+
+The final clean result used this flow shape:
+
+1. Run the design normally through `Checker.IllegalOverlap`.
+2. Patch Magic's GDS-extracted SPICE top-level supply labels from `_uq0` names to canonical names for LVS only.
+3. Resume from `Netgen.LVS` through final manufacturability.
+
+Use the repro script:
+
+```bash
+cd /path/to/dw_openframe_flow_repro
+bash run_double_openframe_flow.sh
+```
+
+The script assumes the VM has LibreLane available at:
+
+```text
+/home/vboxuser/dw_openframe_user_Neuromorphic_X1_32x32/openlane/.venv/bin/python3
+```
+
+If not, set:
+
+```bash
+export LIBRELANE_PY=/path/to/python-that-can-run-librelane
+```
+
+Important files in this bundle:
+
+```text
+verilog/rtl/double_wide_openframe_project_wrapper.v
+openlane/double_wide_openframe_project_wrapper/config.json
+openlane/double_wide_openframe_project_wrapper/macro.cfg
+openlane/double_wide_openframe_project_wrapper/pdn_used_rails.tcl
+openlane/double_wide_openframe_project_wrapper/pin_template.def
+openlane/double_wide_openframe_project_wrapper/pnr.sdc
+openlane/double_wide_openframe_project_wrapper/signoff.sdc
+verilog/rtl/spi_wb_x1_top.v
+verilog/gl/Neuromorphic_X1_wb.v
+lef/Neuromorphic_X1_wb.lef
+gds/Neuromorphic_X1_wb.gds
+lib/Neuromorphic_X1_wb.lib
+```
+
+Verified final metrics:
+
+```text
+LVS errors: 0
+LVS unmatched pins/nets/devices: 0
+Magic DRC: 0
+KLayout DRC: 0
+XOR differences: 0
+Routing DRC final: 0
+Setup violations: 0
+Hold violations: 0
+Max slew violations: 0
+Max cap violations: 0
+Power-grid violations: 0
+Antenna violating pins/nets: 32 / 32
 ```
