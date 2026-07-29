@@ -842,8 +842,8 @@ MACRO Neuromorphic_X1_wb
     USE SIGNAL ;
     ANTENNAGATEAREA 2.016000 ;
     PORT
-      LAYER met3 ;
-        RECT 430.06 1380.01 744.26 1381.14 ;
+      LAYER met4 ;
+        RECT 483.855 1376.35 484.185 1381.05 ;
     END
   END Bias_comp2
   PIN wbs_adr_i[0]
