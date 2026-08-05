@@ -141,7 +141,7 @@ module spi_wb_x1_top (
         .wb_ack_i        (wb_ack_i)
     );
 
-    Neuromorphic_X1_wb u_wb_slave (
+    Neuromorphic_X2_wb u_wb_slave (
 `ifdef USE_PG_PIN
         .VDDC1           (VDDC1),
         .VDDC2           (VDDC2),

@@ -1,4 +1,4 @@
-module Neuromorphic_X1_wb (
+module Neuromorphic_X2_wb (
  
  `ifdef USE_POWER_PINS
    inout         VDDC1,            // 0 V analog ground

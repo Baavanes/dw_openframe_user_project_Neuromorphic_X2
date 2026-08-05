@@ -1,4 +1,4 @@
-library (Neuromorphic_X1_wb ){
+library (Neuromorphic_X2_wb ){
   delay_model : table_lookup;
   date : "Wed Aug 20 09:31:29 2025" ;
   revision : "1.0" ;
@@ -126,8 +126,8 @@ library (Neuromorphic_X1_wb ){
   
   /* end of header section */
   
-  /* Start Design Neuromorphic_X1_wb */
-  cell (Neuromorphic_X1_wb ) { 
+  /* Start Design Neuromorphic_X2_wb */
+  cell (Neuromorphic_X2_wb ) { 
     area :  722000 ;
     cell_leakage_power :  2.3025;
     dont_touch : true ;
@@ -4106,6 +4106,6 @@ pin (ScanOutCC) {
       
     } /* End of pin user_clk */
     
-  } /* End of Design Neuromorphic_X1_wb */
+  } /* End of Design Neuromorphic_X2_wb */
   
 } /* End of Library */
